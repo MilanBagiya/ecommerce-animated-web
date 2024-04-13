@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- *FONT FAMILY CDN -->
+    <link
+      rel="preload"
+      as="font"
+      href="https://kitskinkind.com.au/cdn/shop/t/20/assets/KitSimonMono-Bold.woff2?v=144813160282496313291711432635"
+      type="font/woff2"
+      crossorigin=""
+    />
+
+    <!-- TODO: LOCAL CSS -->
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="/css/base.css" />
+
+    <link rel="stylesheet" href="/css/cart-drawer.css" />
+
+    <link rel="stylesheet" href="/css/header.css" />
+
+    <link rel="stylesheet" href="/css/search.css" />
+
+    <link rel="stylesheet" href="/css/bottom-bar.css" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!-- TODO: BACKDROP BLUR SECTION -->
+    <div
+      data-nav-backdrop=""
+      class="header__dropdown-backdrop tw-fixed tw-w-full tw-h-full tw-left-0 tw-top-0 tw-invisible tw-opacity-0 tw-pointer-events-auto tw-transition-all tw-duration-300 tw-ease-curve tw-z-10"
+    ></div>
+
+    <!-- TODO: ANIMATION FOR MARQUEE TEXT -->
+    <div class="announcement-bar">
+      <div class="embla marquee">
+        <div class="marquee__content">
+          <div class="embla__slide">
+            <p>Free shipping on all orders over $50.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TODO: HEADER SECTION -->
+    <header class="header-section">
+      <div
+        class="tw-flex tw-align-start tw-justify-between tw-absolute tw-top-0 tw-right-0 tw-left-0 tw-p-mobileMargin md:tw-pt-topMargin md:tw-px-sideMargin tw-z-[90] tw-pointer-events-none"
+      >
+        <div
+          class="header-desktop-nav tw-relative tw-group tw-hidden md:tw-block"
+        >
+          <ul
+            class="header__desktop-nav tw-p-0 tw-m-0 tw-rounded-full tw-list-none"
+          >
+            <div
+              class="header__nav-background tw-absolute tw-inset-0 tw-w-full tw-h-13 tw-bg-colorCream tw-rounded-full tw-opacity-0 tw-transition tw-duration-300 tw-ease-curve tw-z-[1] group-hover:tw-opacity-100"
+              style="transform: translateX(0px)"
+            ></div>
+
+            <li class="tw-inline-block tw-relative tw-z-[2]">
+              <a
+                href=""
+                data-nav-level-1=""
+                data-menu-toggle="shop"
+                class="tw-px-6 tw-py-4 tw-inline-block tw-w-full tw-h-full tw-pointer-events-auto tw-uppercase tw-text-colorMainNav hover:tw-text-colorRed tw-transition-colors tw-duration-300 tw-ease-curve tw-rounded-full"
+                >PRODUCT</a
+              >
+            </li>
+
+            <li class="tw-inline-block tw-relative tw-z-[2]">
+              <a
+                href=""
+                data-nav-level-1=""
+                class="tw-px-6 tw-py-4 tw-inline-block tw-w-full tw-h-full tw-pointer-events-auto tw-uppercase tw-text-colorMainNav hover:tw-text-colorRed tw-transition-colors tw-duration-300 tw-ease-curve tw-rounded-full"
+                >ABOUT</a
+              >
+            </li>
+
+            <li class="tw-inline-block tw-relative tw-z-[2]">
+              <a
+                href=""
+                data-nav-level-1=""
+                class="tw-px-6 tw-py-4 tw-inline-block tw-w-full tw-h-full tw-pointer-events-auto tw-uppercase tw-text-colorMainNav hover:tw-text-colorRed tw-transition-colors tw-duration-300 tw-ease-curve tw-rounded-full"
+                >OTHER</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="tw-invisible header__logo tw-min-w-[40px] tw-relative tw-transition-filter tw-duration-600 tw-ease-curve tw-pointer-events-auto tw-will-change-filter hover:tw-filter hover:tw-blur hover:tw-duration-300 hover:tw-ease-curve tw-z-10"
+        >
+          <a href="/" class="tw-text-colorLogo" aria-label="Kit:"
+            ><svg
+              aria-label="Kit: icon logo"
+              class="logo--mini tw-w-[40px] tw-h-auto"
+              width="40"
+              height="100"
+              viewBox="0 0 40 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M40 80C40 91.0457 31.0457 100 20 100C8.95431 100 0 91.0457 0 80C0 68.9543 8.95431 60 20 60C31.0457 60 40 68.9543 40 80Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+
+            <span class="visually-hidden">kit</span>
+          </a>
+        </div>
+
+        <div
+          class="header__dropdown tw-absolute tw-top-full tw-w-full tw-left-0 tw-right-0 tw-px-smallMargin xl:tw-px-sideMargin tw-hidden md:tw-flex tw-justify-center tw-invisible tw-opacity-0 -tw-translate-y-10 tw-ease-curve tw-duration-500 tw-pointer-events-none"
+          data-dropdown-menu="shop"
+          aria-expanded="false"
+        >
+          <div
+            class="tw-bg-colorCream tw-rounded-3xl tw-py-smallMargin tw-max-w-full tw-flex tw-pointer-events-auto tw-shadow-modals"
+          >
+            <div
+              class="tw-w-full tw-min-w-[180px] tw-max-w-[220px] tw-shrink-1 tw-grow-1 tw-pr-smallMargin tw-border-r tw-border-colorBlack tw-pl-smallMargin"
+            >
+              <ul class="">
+                <li class="tw-group tw-flex">
+                  <a
+                    href="/collections/best-sellers"
+                    class="tw-uppercase tw-text-md tw-relative tw-flex tw-items-center tw-py-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      class="tw-absolute tw-left-0 tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300"
+                    >
+                      <path
+                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <span
+                      class="tw-translate-x-0 group-hover:tw-translate-x-8 tw-transition-transform tw-ease-curve tw-duration-300"
+                      >Best Sellers
+
+                      <span class="tw-text-[0.5rem]">25</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="tw-group tw-flex">
+                  <a
+                    href="/collections/latest"
+                    class="tw-uppercase tw-text-md tw-relative tw-flex tw-items-center tw-py-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      class="tw-absolute tw-left-0 tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300"
+                    >
+                      <path
+                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <span
+                      class="tw-translate-x-0 group-hover:tw-translate-x-8 tw-transition-transform tw-ease-curve tw-duration-300"
+                      >Latest
+
+                      <span class="tw-text-[0.5rem]">01</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="tw-group tw-flex">
+                  <a
+                    href="/collections/all"
+                    class="tw-uppercase tw-text-md tw-relative tw-flex tw-items-center tw-py-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      class="tw-absolute tw-left-0 tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300"
+                    >
+                      <path
+                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <span
+                      class="tw-translate-x-0 group-hover:tw-translate-x-8 tw-transition-transform tw-ease-curve tw-duration-300"
+                      >All
+
+                      <span class="tw-text-[0.5rem]">25</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tw-flex tw-flex-wrap tw-justify-end md:tw-flex-col-reverse tw-w-[100px] md:tw-w-[40px] tw-gap-[20px] tw-z-30 tw-pointer-events-auto"
+        >
+          <button
+            type="button"
+            data-search-toggle=""
+            class="header__search-toggle tw-bg-colorCream tw-relative tw-grow-0 tw-shrink-0 tw-w-10 tw-h-10 tw-text-xs tw-leading-10 tw-text-center tw-flex tw-items-center tw-justify-center tw-rounded-full tw-cursor-pointer tw-transition tw-duration-300 tw-ease-curve focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+            id="header__search-button"
+            aria-label="Search"
+          >
+            <span
+              class="header__search-button--closed tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-transition-opacity tw-ease-curve tw-duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M17.4999 17.5L13.169 13.1692M13.169 13.1692C14.3412 11.9971 14.9997 10.4073 14.9997 8.74962C14.9997 7.09196 14.3412 5.50219 13.169 4.33004C11.9969 3.15789 10.4071 2.49939 8.74944 2.49939C7.09178 2.49939 5.502 3.15789 4.32986 4.33004C3.15771 5.50219 2.49921 7.09196 2.49921 8.74962C2.49921 10.4073 3.15771 11.9971 4.32986 13.1692C5.502 14.3414 7.09178 14.9999 8.74944 14.9999C10.4071 14.9999 11.9969 14.3414 13.169 13.1692Z"
+                  stroke="currentColor"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </span>
+            <span
+              aria-label="Close"
+              class="header__search-button--active tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-transition-opacity tw-ease-curve tw-duration-300"
+              >❌</span
+            >
+          </button>
+
+          <a
+            data-cart-toggle=""
+            type="button"
+            class="header__cart-button tw-bg-colorCream tw-relative tw-grow-0 tw-shrink-0 tw-w-10 tw-h-10 tw-text-xs tw-leading-10 tw-text-center tw-flex tw-items-center tw-justify-center tw-rounded-full tw-cursor-pointer tw-transition-colors tw-duration-300 tw-ease-curve focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+            id="header__cart-button"
+            aria-label="Cart toggle"
+          >
+            <span
+              class="header__cart-button--closed tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-transition-opacity tw-ease-curve tw-duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M12.5 7.5V5C12.5 3.61929 11.3807 2.5 9.99998 2.5C8.61927 2.5 7.49998 3.61929 7.49998 5V7.5M3.33331 7.5H16.6666V17.5H3.33331V7.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <circle
+                  cx="5"
+                  cy="15"
+                  r="5"
+                  fill="currentColor"
+                  class="cart-items-indicator"
+                ></circle>
+              </svg>
+              <span class="tw-invisible tw-absolute" data-cart-item-count=""
+                >0</span
+              >
+            </span>
+            <span
+              aria-label="Close"
+              class="header__cart-button--active tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-transition-opacity tw-ease-curve tw-duration-300"
+              >❌</span
+            >
+          </a>
+          <button
+            type="button"
+            data-mobile-nav-toggle=""
+            class="header__hamburger tw-bg-colorCream tw-grow-0 tw-shrink-0 tw-w-10 tw-h-10 tw-text-xs tw-leading-10 tw-text-center tw-flex tw-items-center tw-justify-center tw-rounded-full tw-cursor-pointer tw-transition-colors tw-duration-300 tw-ease-curve md:tw-hidden focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+            id="header__hamburger"
+            aria-label="Mobile navigation toggle"
+          >
+            <div class="header__hamburger-parts">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="bottom-section tw-flex tw-align-start tw-justify-between  md:tw-px-sideMargin tw-z-[90]"
+    >
+      <h2>BOTTOM</h2>
+    </div>
+
+    <!-- TODO: CART DRAWER -->
+    <cart-drawer
+      class="tw-fixed tw-inset-0 tw-w-full tw-bg-colorCream tw-overflow-y-scroll tw-z-50 tw-opacity-0 tw-invisible -tw-translate-y-20 md:tw-translate-y-0 md:tw-translate-x-4 tw-transition-drawers tw-ease-curve tw-duration-500 md:tw-w-[442px] md:tw-top-smallMargin md:tw-right-[104px] md:tw-left-[unset] tw-max-h-full md:tw-h-cartHeight tw-rounded-b-2xl md:tw-rounded-2xl tw-pt-[164px] md:tw-pt-smallMargin tw-px-mobileMargin md:tw-px-smallMargin tw-flex tw-flex-col tw-bottom-[unset] tw-shadow-modals no-items"
+    >
+      <div id="cart" class="tw-flex tw-flex-col tw-grow">
+        <div class="cart__content">
+          <h4 class="tw-text-xl tw-uppercase tw-mb-4">
+            My Bag <span data-cart-item-count="">(0)</span>
+          </h4>
+
+          <div class="cart__free-shipping-wrapper tw-mb-6">
+            <div
+              class="cart__free-shipping-progress tw-relative tw-h-1.5 tw-bg-colorOffWhite tw-rounded tw-mb-3 tw-overflow-hidden"
+            >
+              <div
+                class="cart__free-shipping-progress-bar tw-absolute tw-top-0 tw-left-0 tw-w-1/2 tw-h-full tw-bg-colorRed tw-transition tw-ease-curve tw-ease-300"
+                style="width: 0%"
+              ></div>
+            </div>
+            <div class="cart__free-shipping tw-text-[10px]">
+              Spend another $50 to receive FREE SHIPPING
+            </div>
+          </div>
+          <div
+            class="cart__items tw-border-t tw-border-dashed tw-border-colorBlack tw-mb-20"
+          >
+            <cart-items>
+              <form id="cart__form">
+                <div class="cart__no-items tw-text-sm tw-py-4">
+                  No items in your cart
+                </div>
+              </form>
+            </cart-items>
+          </div>
+        </div>
+        <div class="cart__recommendations tw-mt-auto">
+          <cart-recommendations class="cart__recommended">
+            <h4 class="tw-text-xs tw-uppercase tw-mb-4">Build your kit</h4>
+            <ul class="tw-list-none" role="list">
+              <li>
+                <div
+                  class="list-product tw-flex tw-items-center tw-border-t tw-border-dashed tw-border-colorBlack tw-py-2"
+                >
+                  <div
+                    class="list-product__image tw-w-[48px] tw-h-[48px] tw-shrink-0 tw-grow-0 tw-flex tw-justify-center tw-items-center tw-mr-3"
+                  >
+                    <a href="/" class="tw-block tw-w-full tw-h-full">
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0621/9313/9901/files/KIT_E-COMM_-_SMOOTHING_CONCENTRATE.png?format=webp&amp;v=1712026687&amp;width=100"
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                        class="tw-object-contain tw-w-full tw-h-full"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="list-product__meta tw-grow tw-text-xs tw-uppercase"
+                  >
+                    <div class="list-product__title">
+                      <a href="/"> Smoothing Concentrate</a>
+                    </div>
+                    <div class="list-product__variant tw-text-colorGrey">
+                      30ML / 1.01 FL. OZ
+                    </div>
+                  </div>
+                  <div
+                    class="list-product__price tw-text-xs tw-uppercase tw-px-4"
+                  >
+                    <div class="price">$37</div>
+                  </div>
+                  <product-form>
+                    <input
+                      type="hidden"
+                      name="form_type"
+                      value="product"
+                    /><input type="hidden" name="utf8" value="✓" /><input
+                      type="hidden"
+                      name="id"
+                      value="42839753949373"
+                    />
+                    <button
+                      type="submit"
+                      name="add"
+                      class="tw-flex tw-whitespace-nowrap tw-text-xs tw-text-colorRed hover:tw-text-colorBlack tw-border-0 tw-bg-transparent focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+                    >
+                      Add +</button
+                    ><input
+                      type="hidden"
+                      name="product-id"
+                      value="7477191049405"
+                    /><input
+                      type="hidden"
+                      name="section-id"
+                      value="cart-drawer"
+                    />
+                  </product-form>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="list-product tw-flex tw-items-center tw-border-t tw-border-dashed tw-border-colorBlack tw-py-2"
+                >
+                  <div
+                    class="list-product__image tw-w-[48px] tw-h-[48px] tw-shrink-0 tw-grow-0 tw-flex tw-justify-center tw-items-center tw-mr-3"
+                  >
+                    <a href="/" class="tw-block tw-w-full tw-h-full">
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0621/9313/9901/files/KIT_E-COMM_-_REBALANCING_CONCENTRATE.png?format=webp&amp;v=1712026104&amp;width=100"
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                        class="tw-object-contain tw-w-full tw-h-full"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="list-product__meta tw-grow tw-text-xs tw-uppercase"
+                  >
+                    <div class="list-product__title">
+                      <a href="/"> Replacing Concentrate</a>
+                    </div>
+                    <div class="list-product__variant tw-text-colorGrey">
+                      30ML / 1.01 FL. OZ
+                    </div>
+                  </div>
+                  <div
+                    class="list-product__price tw-text-xs tw-uppercase tw-px-4"
+                  >
+                    <div class="price">$37</div>
+                  </div>
+                  <product-form>
+                    <input
+                      type="hidden"
+                      name="form_type"
+                      value="product"
+                    /><input type="hidden" name="utf8" value="✓" /><input
+                      type="hidden"
+                      name="id"
+                      value="42157064978621"
+                    />
+                    <button
+                      type="submit"
+                      name="add"
+                      class="tw-flex tw-whitespace-nowrap tw-text-xs tw-text-colorRed hover:tw-text-colorBlack tw-border-0 tw-bg-transparent focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+                    >
+                      Add +</button
+                    ><input
+                      type="hidden"
+                      name="product-id"
+                      value="7278146158781"
+                    /><input
+                      type="hidden"
+                      name="section-id"
+                      value="cart-drawer"
+                    />
+                  </product-form>
+                </div>
+              </li>
+            </ul>
+          </cart-recommendations>
+        </div>
+        <div
+          class="cart__bottom tw-sticky tw-bottom-0 tw-bg-colorCream tw-pt-4 tw-pb-smallMargin tw-border-t tw-border-dashed tw-border-colorBlack"
+        >
+          <div
+            class="cart__subtotal tw-flex tw-justify-between tw-items-center tw-text-sm md:tw-text-lg tw-uppercase tw-mb-4"
+          >
+            Subtotal: <span class="cart__total-price">$0</span>
+          </div>
+          <div class="cart__checkout">
+            <button
+              type="submit"
+              class="cart__checkout-button button button--red tw-w-full disabled:tw-bg-colorGrey"
+              name="checkout"
+              form="cart__form"
+              disabled=""
+            >
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </cart-drawer>
+
+    <!-- TODO: SEARCH COMPONENT -->
+    <predictive-search
+      class="search-modal__form tw-fixed tw-inset-0 tw-w-full tw-bg-colorCream tw-overflow-y-scroll tw-z-50 tw-opacity-0 tw-invisible -tw-translate-y-20 md:tw-translate-y-0 md:tw-translate-x-4 tw-transition-drawers tw-ease-curve tw-duration-500 md:tw-w-[442px] md:tw-top-smallMargin md:tw-right-[104px] md:tw-left-[unset] tw-max-h-full md:tw-h-cartHeight tw-rounded-b-2xl md:tw-rounded-2xl tw-pb-smallMargin tw-px-mobileMargin md:tw-px-smallMargin tw-flex tw-flex-col tw-bottom-[unset] tw-shadow-modals"
+      data-context="modal"
+      data-loading-text="Loading..."
+      open="true"
+    >
+      <form
+        action="/search"
+        method="get"
+        role="search"
+        class="search search__form"
+      >
+        <div
+          class="search__form-field tw-pt-[164px] md:tw-pt-smallMargin tw-pb-2"
+        >
+          <div class="field tw-relative">
+            <input
+              class="search__input field__input tw-pr-16"
+              id="Search-In-Modal"
+              type="search"
+              name="q"
+              value=""
+              placeholder="search store..."
+              role="combobox"
+              aria-expanded="true"
+              aria-owns="predictive-search-results"
+              aria-controls="predictive-search-results"
+              aria-haspopup="listbox"
+              aria-autocomplete="list"
+              autocorrect="off"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              aria-activedescendant=""
+            />
+            <label class="field__label visually-hidden" for="Search-In-Modal"
+              >search store...</label
+            >
+            <input type="hidden" name="options[prefix]" value="last" />
+
+            <button
+              class="search__button field__button tw-absolute tw-top-1/2 -tw-translate-y-1/2 tw-right-2 tw-w-8 tw-h-8 tw-text-colorRed"
+              aria-label="search store..."
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class=""
+              >
+                <path
+                  d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="predictive-search predictive-search--header"
+          tabindex="-1"
+          data-predictive-search=""
+        ></div>
+
+        <span
+          class="predictive-search-status visually-hidden"
+          role="status"
+          aria-hidden="true"
+        ></span>
+      </form>
+
+      <div
+        class="predictive-search__default-content"
+        data-no-search-performed=""
+      >
+        <div
+          class="tw-pb-smallMargin tw-mb-smallMargin tw-border-b tw-border-dashed tw-border-colorBlack"
+        >
+          <h5 class="tw-uppercase tw-text-xs tw-mb-5">Search Suggestions</h5>
+
+          <ul class="tw-text-xs tw-flex tw-flex-col tw-items-stretch">
+            <li class="tw-flex">
+              <button
+                type="button"
+                data-suggested-search="Face Oil"
+                class="tw-group tw-w-full tw-relative tw-flex tw-items-start tw-justify-start tw-gap-1 tw-py-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="tw-absolute tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300 tw-w-4 tw-h-4 tw-top-1/2 tw-left-0 -tw-translate-y-1/2"
+                >
+                  <path
+                    d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <span
+                  class="tw-translate-x-0 group-hover:tw-translate-x-6 group-hover:tw-text-colorRed tw-transition tw-ease-curve tw-duration-300"
+                  >Face Oil</span
+                >
+              </button>
+            </li>
+
+            <li class="tw-flex">
+              <button
+                type="button"
+                data-suggested-search="RE:SET Hand Wash"
+                class="tw-group tw-w-full tw-relative tw-flex tw-items-start tw-justify-start tw-gap-1 tw-py-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="tw-absolute tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300 tw-w-4 tw-h-4 tw-top-1/2 tw-left-0 -tw-translate-y-1/2"
+                >
+                  <path
+                    d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <span
+                  class="tw-translate-x-0 group-hover:tw-translate-x-6 group-hover:tw-text-colorRed tw-transition tw-ease-curve tw-duration-300"
+                  >RE:SET Hand Wash</span
+                >
+              </button>
+            </li>
+
+            <li class="tw-flex">
+              <button
+                type="button"
+                data-suggested-search="Gift Sets"
+                class="tw-group tw-w-full tw-relative tw-flex tw-items-start tw-justify-start tw-gap-1 tw-py-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="tw-absolute tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300 tw-w-4 tw-h-4 tw-top-1/2 tw-left-0 -tw-translate-y-1/2"
+                >
+                  <path
+                    d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <span
+                  class="tw-translate-x-0 group-hover:tw-translate-x-6 group-hover:tw-text-colorRed tw-transition tw-ease-curve tw-duration-300"
+                  >Gift Sets</span
+                >
+              </button>
+            </li>
+
+            <li class="tw-flex">
+              <button
+                type="button"
+                data-suggested-search="Lotion"
+                class="tw-group tw-w-full tw-relative tw-flex tw-items-start tw-justify-start tw-gap-1 tw-py-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="tw-absolute tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300 tw-w-4 tw-h-4 tw-top-1/2 tw-left-0 -tw-translate-y-1/2"
+                >
+                  <path
+                    d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <span
+                  class="tw-translate-x-0 group-hover:tw-translate-x-6 group-hover:tw-text-colorRed tw-transition tw-ease-curve tw-duration-300"
+                  >Lotion</span
+                >
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="">
+          <h5
+            class="tw-uppercase tw-text-xs tw-mb-5 tw-flex tw-justify-between"
+            id="predictive-search-no-search-products"
+          >
+            Best Sellers
+            <a href="/collections/best-sellers" class="hover:tw-text-colorRed"
+              >View all</a
+            >
+          </h5>
+          <ul
+            class="predictive-search-results-products-list"
+            role="group"
+            aria-labelledby="predictive-search-no-search-products"
+          >
+            <li
+              id="predictive-search-no-search-product-1"
+              class="predictive-search__list-item tw-flex"
+              role="option"
+              aria-selected="false"
+            >
+              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
+                <card-product-media class="lg:tw-relative tw-z-[1]">
+                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+                    <div
+                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                    >
+                      <div
+                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
+                      >
+                        <img
+                          src="//kitskinkind.com.au/cdn/shop/files/Mineral_Cleanser_Front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478323&amp;width=838"
+                          alt="Mineral Water Cleanser"
+                          width="838"
+                          height="1100"
+                          loading="lazy"
+                          sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
+                          class="tw-object-contain tw-w-full tw-h-full"
+                        />
+                      </div>
+                      <div
+                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                      >
+                        <video
+                          playsinline="playsinline"
+                          loop="loop"
+                          autoplay=""
+                          muted="muted"
+                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          data-lazyvids="loaded"
+                          preload="metadata"
+                          aria-label="Mineral Water Cleanser"
+                          poster="//kitskinkind.com.au/cdn/shop/products/79e7ad2d81674c2d85c75d5d5840c801.thumbnail.0000000_small.jpg?v=1657137016"
+                        >
+                          <source
+                            src="https://cdn.shopify.com/videos/c/vp/79e7ad2d81674c2d85c75d5d5840c801/79e7ad2d81674c2d85c75d5d5840c801.HD-1080p-7.2Mbps.mp4"
+                            type="video/mp4"
+                          />
+                          <img
+                            src="//kitskinkind.com.au/cdn/shop/products/79e7ad2d81674c2d85c75d5d5840c801.thumbnail.0000000_small.jpg?v=1657137016"
+                          />
+                        </video>
+                      </div>
+                    </div>
+                  </a>
+                </card-product-media>
+                <div
+                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
+                >
+                  <span
+                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                  ></span>
+                  <a
+                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    href="/"
+                  >
+                    <div class="tw-relative tw-text-xs tw-uppercase">
+                      Mineral Water Cleanser
+                    </div>
+                    <span
+                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                      >100ML / 3.38 FL. OZ</span
+                    >
+                    <div
+                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
+                    >
+                      <div class="price">$63</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li
+              id="predictive-search-no-search-product-2"
+              class="predictive-search__list-item tw-flex"
+              role="option"
+              aria-selected="false"
+            >
+              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
+                <card-product-media class="lg:tw-relative tw-z-[1]">
+                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+                    <div
+                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                    >
+                      <div
+                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
+                      >
+                        <img
+                          src="//kitskinkind.com.au/cdn/shop/files/Skinkind_Faceoil_Front_front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478513&amp;width=838"
+                          alt="Skinkind Face Oil"
+                          width="838"
+                          height="1100"
+                          loading="lazy"
+                          sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
+                          class="tw-object-contain tw-w-full tw-h-full"
+                        />
+                      </div>
+                      <div
+                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                      >
+                        <video
+                          playsinline="playsinline"
+                          loop="loop"
+                          autoplay=""
+                          muted="muted"
+                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          data-lazyvids="loaded"
+                          preload="metadata"
+                          aria-label="Skinkind Face Oil"
+                          poster="//kitskinkind.com.au/cdn/shop/products/be42e915c5c04abbb99c17cc8c9514de.thumbnail.0000000_small.jpg?v=1657537513"
+                        >
+                          <source
+                            src="https://cdn.shopify.com/videos/c/vp/be42e915c5c04abbb99c17cc8c9514de/be42e915c5c04abbb99c17cc8c9514de.HD-1080p-7.2Mbps.mp4"
+                            type="video/mp4"
+                          />
+                          <img
+                            src="//kitskinkind.com.au/cdn/shop/products/be42e915c5c04abbb99c17cc8c9514de.thumbnail.0000000_small.jpg?v=1657537513"
+                          />
+                        </video>
+                      </div>
+                    </div>
+                  </a>
+                </card-product-media>
+                <div
+                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
+                >
+                  <span
+                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                  ></span>
+                  <a
+                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    href="/"
+                  >
+                    <div class="tw-relative tw-text-xs tw-uppercase">
+                      Skinkind Face Oil
+                    </div>
+                    <span
+                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                      >30ML / 1.01 FL. OZ</span
+                    >
+                    <div
+                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
+                    >
+                      <div class="price">$42</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li
+              id="predictive-search-no-search-product-3"
+              class="predictive-search__list-item tw-flex"
+              role="option"
+              aria-selected="false"
+            >
+              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
+                <card-product-media class="lg:tw-relative tw-z-[1]">
+                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+                    <div
+                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                    >
+                      <div
+                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
+                      >
+                        <img
+                          src="//kitskinkind.com.au/cdn/shop/files/Re-lax_Drops_Front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478480&amp;width=838"
+                          alt="RE:LAX Herbal Ingestible Drops"
+                          width="838"
+                          height="1100"
+                          loading="lazy"
+                          sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
+                          class="tw-object-contain tw-w-full tw-h-full"
+                        />
+                      </div>
+                      <div
+                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                      >
+                        <img
+                          src="//kitskinkind.com.au/cdn/shop/files/Relax_Drops_Group_HOVER.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1657537914&amp;width=838"
+                          alt="RE:LAX Herbal Ingestible Drops"
+                          width="838"
+                          height="1100"
+                          loading="lazy"
+                          class="tw-h-full tw-w-full tw-object-cover tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </card-product-media>
+                <div
+                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
+                >
+                  <span
+                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                  ></span>
+                  <a
+                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    href="/"
+                  >
+                    <div class="tw-relative tw-text-xs tw-uppercase">
+                      RE:LAX Herbal Ingestible Drops
+                    </div>
+                    <span
+                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                      >60mL Oral Liquid</span
+                    >
+                    <div
+                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
+                    >
+                      <div class="price">$40</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li
+              id="predictive-search-no-search-product-4"
+              class="predictive-search__list-item tw-flex"
+              role="option"
+              aria-selected="false"
+            >
+              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
+                <card-product-media class="lg:tw-relative tw-z-[1]">
+                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+                    <div
+                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                    >
+                      <div
+                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
+                      >
+                        <img
+                          src="//kitskinkind.com.au/cdn/shop/files/KIT_E-COMM_-_BRIGHTENING_CONCENTRATE_THUMB_55189982-0054-4bb0-9799-c4d13d8c7f29.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1712097232&amp;width=838"
+                          alt="Brightening Concentrate"
+                          width="838"
+                          height="1100"
+                          loading="lazy"
+                          sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
+                          class="tw-object-contain tw-w-full tw-h-full"
+                        />
+                      </div>
+                      <div
+                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                      >
+                        <video
+                          playsinline="playsinline"
+                          loop="loop"
+                          autoplay="autoplay"
+                          muted="muted"
+                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          data-lazyvids="unloaded"
+                          preload="metadata"
+                          aria-label="Brightening Concentrate"
+                          poster="//kitskinkind.com.au/cdn/shop/files/preview_images/838bd94b61974d1aa3b617d523ae9a7d.thumbnail.0000000000_small.jpg?v=1712024584"
+                        >
+                          <source
+                            src="https://cdn.shopify.com/videos/c/vp/838bd94b61974d1aa3b617d523ae9a7d/838bd94b61974d1aa3b617d523ae9a7d.HD-1080p-7.2Mbps-26630280.mp4"
+                            type="video/mp4"
+                          />
+                          <img
+                            src="//kitskinkind.com.au/cdn/shop/files/preview_images/838bd94b61974d1aa3b617d523ae9a7d.thumbnail.0000000000_small.jpg?v=1712024584"
+                          />
+                        </video>
+                      </div>
+                    </div>
+                  </a>
+                </card-product-media>
+                <div
+                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
+                >
+                  <span
+                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                  ></span>
+                  <a
+                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    href="/"
+                  >
+                    <div class="tw-relative tw-text-xs tw-uppercase">
+                      Brightening Concentrate
+                    </div>
+                    <span
+                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                      >30ML / 1.01 FL. OZ</span
+                    >
+                    <div
+                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
+                    >
+                      <div class="price">$37</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li
+              id="predictive-search-no-search-product-5"
+              class="predictive-search__list-item tw-flex"
+              role="option"
+              aria-selected="false"
+            >
+              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
+                <card-product-media class="lg:tw-relative tw-z-[1]">
+                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+                    <div
+                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                    >
+                      <div
+                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
+                      >
+                        <img
+                          src="//kitskinkind.com.au/cdn/shop/files/KIT_E-COMM_-_EXFOLIATING_CONCENTRATE_THUMB_675bb779-5845-49f6-8a17-f595b4cde51a.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1712097256&amp;width=838"
+                          alt="Exfoliating Concentrate"
+                          width="838"
+                          height="1100"
+                          loading="lazy"
+                          sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
+                          class="tw-object-contain tw-w-full tw-h-full"
+                        />
+                      </div>
+                      <div
+                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                      >
+                        <video
+                          playsinline="playsinline"
+                          loop="loop"
+                          autoplay="autoplay"
+                          muted="muted"
+                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          data-lazyvids="unloaded"
+                          preload="metadata"
+                          aria-label="Exfoliating Concentrate"
+                          poster="//kitskinkind.com.au/cdn/shop/files/preview_images/440d867aad554a23b592ce0f572d7c6a.thumbnail.0000000000_small.jpg?v=1712025255"
+                        >
+                          <source
+                            src="https://cdn.shopify.com/videos/c/vp/440d867aad554a23b592ce0f572d7c6a/440d867aad554a23b592ce0f572d7c6a.HD-1080p-7.2Mbps-26630525.mp4"
+                            type="video/mp4"
+                          />
+                          <img
+                            src="//kitskinkind.com.au/cdn/shop/files/preview_images/440d867aad554a23b592ce0f572d7c6a.thumbnail.0000000000_small.jpg?v=1712025255"
+                          />
+                        </video>
+                      </div>
+                    </div>
+                  </a>
+                </card-product-media>
+                <div
+                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
+                >
+                  <span
+                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                  ></span>
+                  <a
+                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    href="/"
+                  >
+                    <div class="tw-relative tw-text-xs tw-uppercase">
+                      Exfoliating Concentrate
+                    </div>
+                    <span
+                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                      >30ML / 1.01 FL. OZ</span
+                    >
+                    <div
+                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
+                    >
+                      <div class="price">$37</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li
+              id="predictive-search-no-search-product-6"
+              class="predictive-search__list-item tw-flex"
+              role="option"
+              aria-selected="false"
+            >
+              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
+                <card-product-media class="lg:tw-relative tw-z-[1]">
+                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+                    <div
+                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                    >
+                      <div
+                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
+                      >
+                        <img
+                          src="//kitskinkind.com.au/cdn/shop/files/KIT_E-COMM_-_REBALANCING_CONCENTRATE_THUMB_c56af9b1-9e94-4be3-bd4c-154747ad7a2f.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1712097312&amp;width=838"
+                          alt="Rebalancing Concentrate"
+                          width="838"
+                          height="1100"
+                          loading="lazy"
+                          sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
+                          class="tw-object-contain tw-w-full tw-h-full"
+                        />
+                      </div>
+                      <div
+                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                      >
+                        <video
+                          playsinline="playsinline"
+                          loop="loop"
+                          autoplay="autoplay"
+                          muted="muted"
+                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          data-lazyvids="unloaded"
+                          preload="metadata"
+                          aria-label="Rebalancing Concentrate"
+                          poster="//kitskinkind.com.au/cdn/shop/files/preview_images/ae96f5c937f5452886bf4a87e6329a6f.thumbnail.0000000000_small.jpg?v=1712025985"
+                        >
+                          <source
+                            src="https://cdn.shopify.com/videos/c/vp/ae96f5c937f5452886bf4a87e6329a6f/ae96f5c937f5452886bf4a87e6329a6f.HD-1080p-7.2Mbps-26631112.mp4"
+                            type="video/mp4"
+                          />
+                          <img
+                            src="//kitskinkind.com.au/cdn/shop/files/preview_images/ae96f5c937f5452886bf4a87e6329a6f.thumbnail.0000000000_small.jpg?v=1712025985"
+                          />
+                        </video>
+                      </div>
+                    </div>
+                  </a>
+                </card-product-media>
+                <div
+                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
+                >
+                  <span
+                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                  ></span>
+                  <a
+                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    href="/"
+                  >
+                    <div class="tw-relative tw-text-xs tw-uppercase">
+                      Rebalancing Concentrate
+                    </div>
+                    <span
+                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                      >30ML / 1.01 FL. OZ</span
+                    >
+                    <div
+                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
+                    >
+                      <div class="price">$37</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </predictive-search>
+
+    <!-- TODO: MAIN SECTION -->
+    <main class="tw-hidden">
+      <section>
+        <!-- TODO: BG CLASS -->
+        <!-- tw-bg-colorBackground -->
+        <div
+          class="tw-section tw-flex tw-flex-col tw-justify-center tw-py-10 lg:tw-py-20"
+          data-section-theme="#000"
+        >
+          <featured-products-slider-component class="tw-relative">
+            <ul
+              class="tw-flex tw-list-none tw-overflow-x-auto tw-snap-x tw-snap-mandatory tw-scroll-smooth tw-gap-x-2 tw-px-4 lg:tw-px-sideMargin tw-scroll-px-4 lg:tw-scroll-px-sideMargin tw-scrollbar-hide"
+              role="list"
+            >
+              <li
+                id="Slide-template--16828984721597__featured_products_NJwYnR-1"
+                class="tw-relative tw-flex tw-shrink-0 tw-flex-col tw-overflow-hidden tw-w-[92%] sm:tw-w-[75%] md:tw-w-[40%] xl:tw-w-[30%] tw-snap-start"
+                role="listitem"
+              >
+                <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
+                  <card-product-media class="lg:tw-relative tw-z-[1]">
+                    <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+                      <div
+                        class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                      >
+                        <div
+                          class="tw-flex tw-justify-center tw-items-center tw-w-full"
+                        >
+                          <img
+                            src="//kitskinkind.com.au/cdn/shop/files/Skinkind_Faceoil_Front_front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478513&amp;width=838"
+                            alt="Skinkind Face Oil"
+                            width="838"
+                            height="1100"
+                            loading="lazy"
+                            sizes="(min-width: 1280px) calc((100vw - 112px - 8px) * 0.30),
+            (min-width: 800px) calc((100vw - 32px - 8px) * 0.40),
+            (min-width: 640px) calc((100vw - 32px) * 0.75),
+            calc((100vw - 32px) * 0.92)"
+                            class="tw-object-contain tw-w-full tw-h-full"
+                          />
+                        </div>
+                        <div
+                          class="tw-p-4 tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                        >
+                          <video
+                            playsinline="playsinline"
+                            loop="loop"
+                            autoplay=""
+                            muted="muted"
+                            class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                            data-lazyvids="loaded"
+                            preload="metadata"
+                            aria-label="Skinkind Face Oil"
+                            poster="//kitskinkind.com.au/cdn/shop/products/be42e915c5c04abbb99c17cc8c9514de.thumbnail.0000000_small.jpg?v=1657537513"
+                          >
+                            <source
+                              src="https://cdn.shopify.com/videos/c/vp/be42e915c5c04abbb99c17cc8c9514de/be42e915c5c04abbb99c17cc8c9514de.HD-1080p-7.2Mbps.mp4"
+                              type="video/mp4"
+                            />
+                            <img
+                              src="//kitskinkind.com.au/cdn/shop/products/be42e915c5c04abbb99c17cc8c9514de.thumbnail.0000000_small.jpg?v=1657537513"
+                            />
+                          </video>
+                        </div>
+                      </div>
+                    </a>
+
+                    <div
+                      id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
+                      data-info-panel=""
+                      class="card-product__info-panel tw-p-4 tw-absolute tw-z-[2] tw-bg-colorRed tw-text-colorWhite tw-top-0 tw-left-0 tw-bottom-0 tw-right-0 sm:tw-top-4 sm:tw-left-4 sm:tw-bottom-4 sm:tw-right-4 tw-transition tw-duration-500 tw-ease-curve tw-rounded-xl tw-flex tw-flex-col tw-justify-center tw-opacity-0 tw-invisible tw-text-xs"
+                    >
+                      <div>
+                        <p>Suited for:</p>
+                        <p>All skin types.</p>
+                      </div>
+
+                      <div>
+                        <p>Application:</p>
+                        <p>2-5 drops daily, AM + PM.</p>
+                      </div>
+
+                      <div>
+                        <p>Benefits:</p>
+                        <p>Rebalance stressed skin.</p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      data-info-toggle=""
+                      aria-expanded="false"
+                      aria-controls="info-panel-7278142161085"
+                      class="card-product__info-toggle tw-absolute tw-z-[3] tw-top-2 tw-right-2 sm:tw-top-6 sm:tw-right-6 tw-w-5 tw-h-5 tw-rounded-full tw-bg-transparent tw-text-colorRed tw-border tw-border-colorRed tw-text-xs hover:tw-bg-colorRed hover:tw-text-colorWhite hover:tw-border-colorRed"
+                    >
+                      i
+                    </button>
+
+                    <product-form
+                      class="tw-absolute lg:tw-opacity-0 lg:tw-translate-y-4 group-hover:tw-opacity-100 group-hover:tw-translate-y-0 tw-bottom-0 tw-w-full tw-p-4 lg:tw-p-8 tw-z-[1] tw-transition tw-ease-curve tw-duration-700"
+                      ><form
+                        method="post"
+                        action="/cart/add"
+                        id="product_form_7278142161085"
+                        accept-charset="UTF-8"
+                        class="shopify-product-form"
+                        enctype="multipart/form-data"
+                        novalidate="novalidate"
+                      >
+                        <input
+                          type="hidden"
+                          name="form_type"
+                          value="product"
+                        /><input type="hidden" name="utf8" value="✓" /><input
+                          type="hidden"
+                          name="id"
+                          value="42071703191741"
+                        />
+                        <button
+                          type="submit"
+                          name="add"
+                          class="button button--full-width !tw-text-sm !tw-border !tw-border-solid !tw-border-colorRed tw-bg-transparent tw-text-colorRed lg:tw-text-colorWhite lg:!tw-bg-colorRed hover:lg:!tw-bg-transparent hover:lg:!tw-text-colorRed !tw-px-3"
+                        >
+                          Add to Cart</button
+                        ><input
+                          type="hidden"
+                          name="product-id"
+                          value="7278142161085"
+                        /><input
+                          type="hidden"
+                          name="section-id"
+                          value="template--16828984721597__featured_products_NJwYnR"
+                        /></form></product-form
+                  ></card-product-media>
+                  <div
+                    class="tw-relative tw-z-0 tw-p-6 tw-pb-20 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
+                  >
+                    <span
+                      class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                    ></span>
+                    <a
+                      class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                      href="/"
+                    >
+                      <div class="tw-relative tw-text-xs tw-uppercase">
+                        Skinkind Face Oil
+                      </div>
+                      <span
+                        class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                        >30ML / 1.01 FL. OZ</span
+                      >
+                      <div
+                        class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
+                      >
+                        <div class="price">$42</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </featured-products-slider-component>
+        </div>
+      </section>
+      <section data-section-theme="#fff" style="display: none">
+        <div
+          class="swiper-container hero-swiper-container-main swiper-initialized swiper-horizontal swiper-backface-hidden"
+        >
+          <div
+            class="swiper-wrapper"
+            style="
+              transition-duration: 0ms;
+              transform: translate3d(-3840px, 0px, 0px);
+              transition-delay: 0ms;
+            "
+          >
+            <div
+              class="swiper-slide swiper-slide-next"
+              style="width: 1920px"
+              data-swiper-slide-index="1"
+            ></div>
+            <div
+              class="swiper-slide swiper-slide-prev"
+              style="width: 1920px"
+              data-swiper-slide-index="2"
+            ></div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              data-swiper-slide-index="0"
+              style="width: 1920px"
+            >
+              <img
+                src="https://kitskinkind.com.au/cdn/shop/files/220502_KIT_04_0461_R2.jpg?format=webp&amp;v=1709857203&amp;width=2002"
+                width="2002"
+                height="3000"
+                loading="lazy"
+                sizes="100vw"
+                class="tw-hidden md:tw-block"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- TODO: LOCAL JS FILE-->
+    <script src="/js/global.js" defer="defer"></script>
+
+    <script src="/js/search-component.js" defer="defer"></script>
+
+    <script src="/js/stickey-header.js" type="module"></script>
+
+    <script src="./js/cart-drawer.js"></script>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

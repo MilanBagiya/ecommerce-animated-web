@@ -1,0 +1,285 @@
+.header-section {
+  position: sticky;
+  top: var(--announcement-bar-sticky-header-offset);
+  z-index: 90;
+  height: 0px;
+  width: 100%;
+}
+
+.is-firefox .cart-open .header-section,
+.is-firefox .search-open .header-section,
+.is-firefox .menu-active .header-section {
+  position: fixed;
+}
+
+.header__logo {
+  position: relative;
+}
+
+.header__logo .logo--mini,
+.header__logo--swap .logo--full {
+  position: absolute;
+  top: 0;
+  transform-origin: top left;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  transition-timing-function: var(--curve);
+}
+
+.header__logo--swap .logo--mini {
+  visibility: hidden;
+  height: auto;
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+}
+
+.header__logo--swap .logo--full {
+  height: auto;
+  width: 100px;
+}
+
+@media (min-width: 1024px) {
+  .header__logo--swap .logo--full {
+    width: 180px;
+  }
+}
+
+.header-section.is-scrolled .header__logo--swap .logo--mini {
+  visibility: visible;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+
+.header-section.is-scrolled .header__logo--swap .logo--full {
+  visibility: hidden;
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+}
+
+.header__desktop-nav {
+  background-color: rgba(var(--cream-rgb), 0.1);
+  transition: filter 0.3s var(--curve), background-color 0.3s var(--curve),
+    box-shadow 0.3s var(--curve);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+[data-nav-level-1] {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  transition-timing-function: var(--curve);
+}
+
+[data-nav-level-1].is-red {
+  color: var(--red);
+}
+
+.header__dropdown-backdrop {
+  background-color: rgba(var(--cream-rgb), 0.05);
+  transition-property: filter, background-color, box-shadow, opacity, visibility;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.dropdown-active .header__dropdown-backdrop,
+.header__dropdown-backdrop.is-shown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header__dropdown.is-shown {
+  visibility: visible;
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+  transition-property: transform, opacity, visibility;
+}
+
+.header__hamburger-parts {
+  position: relative;
+  display: flex;
+  height: 1rem;
+  width: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header__hamburger span {
+  left: 2px;
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 0.25rem;
+  background-color: var(--black);
+  opacity: 1;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.2s;
+  transition-timing-function: var(--curve);
+}
+
+.header__hamburger span:nth-child(1) {
+  top: 10%;
+  transform-origin: left center;
+}
+
+.header__hamburger span:nth-child(2) {
+  top: 50%;
+  width: 0.75rem;
+  transform-origin: left center;
+}
+
+.header__hamburger span:nth-child(3) {
+  top: 80%;
+  transform-origin: left center;
+}
+
+.header__cart-button svg {
+  overflow: visible;
+}
+
+.header__search-button--closed,
+.header__cart-button--closed {
+  opacity: 1;
+}
+
+.header__search-button--active,
+.header__cart-button--active {
+  font-size: 17px;
+  opacity: 0;
+}
+
+.search-open .header__search-toggle,
+.cart-open .header__cart-button {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.search-open .header__search-button--closed,
+.cart-open .header__cart-button--closed {
+  opacity: 0;
+}
+
+.search-open .header__search-button--active,
+.cart-open .header__cart-button--active {
+  opacity: 1;
+}
+
+.cart-items-indicator {
+  position: relative;
+  transform-origin: center;
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  color: transparent;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  transition-timing-function: var(--curve);
+}
+
+.header__cart-button--items .cart-items-indicator {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  color: var(--red);
+}
+
+.header__cart-button--ping .cart-items-indicator {
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.menu-active .header__search-toggle,
+.menu-active .header__cart-button {
+  background-color: var(--off-white);
+}
+
+.menu-active .header__mobile-nav {
+  visibility: visible;
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+
+.menu-active .header__hamburger {
+  background-color: var(--red);
+}
+
+.menu-active .header__hamburger span {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.menu-active .header__hamburger span:nth-child(1) {
+  position: absolute;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.menu-active .header__hamburger span:nth-child(3) {
+  position: absolute;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.menu-active .header__hamburger span:nth-child(2) {
+  width: 0px;
+  opacity: 0;
+}

@@ -1,0 +1,125 @@
+:root {
+  --swiper-navigation-size: 44px;
+  --announcement-bar-bgcolour: #c20019;
+  --announcement-bar-colour: #ffffff;
+  --announcement-bar-height: 25px;
+  --announcement-bar-sticky-header-offset: 0;
+  --gap: 10rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* TODO: FONT FACE */
+@font-face {
+  font-family: "Kit Simon Mono";
+  src: url(https://kitskinkind.com.au/cdn/shop/t/20/assets/KitSimonMono-Regular.woff2?v=58024086328922598081711432635)
+    format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kit Simon Mono";
+  src: url(https://kitskinkind.com.au/cdn/shop/t/20/assets/KitSimonMono-Bold.woff2?v=144813160282496313291711432635)
+    format("woff2");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 120px;
+  }
+}
+
+@media (min-width: 801px) {
+  :root {
+    --announcement-bar-height: 25px;
+  }
+
+  .announcement-bar .embla__slide,
+  .announcement-bar .embla__slide p {
+    font-size: 15px;
+  }
+}
+
+body {
+  background-color: rgb(212, 210, 208);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.announcement-bar {
+  height: var(--announcement-bar-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--announcement-bar-bgcolour);
+  color: var(--announcement-bar-colour);
+}
+
+.announcement-bar .marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.announcement-bar .marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  animation: scroll 30s linear infinite;
+}
+
+.announcement-bar .marquee__content .embla__slide {
+  flex: initial;
+  min-width: 300px;
+  text-align: center;
+}
+
+.announcement-bar .embla.marquee {
+  margin: 0;
+}
+
+.announcement-bar .embla__slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-bar .embla__slide,
+.announcement-bar .embla__slide p {
+  font-size: 14px;
+}
+
+.announcement-bar .embla {
+  width: 100%;
+  margin: 0 3rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.menu-links {
+}

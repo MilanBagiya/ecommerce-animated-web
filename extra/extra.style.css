@@ -1,0 +1,56 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#page1 {
+  background-image: url(https://kitskinkind.com.au/cdn/shop/files/KIT_BODY_GUA_SHA_-_MODEL_-_001.jpg?format=webp&v=1711519482&width=1920);
+  height: 100vh;
+  width: 100%;
+
+  background-color: rgba(251, 248, 244, 0.05);
+  transition-property: filter, background-color, box-shadow, opacity, visibility;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.cart-button {
+  background-color: #fbf8f4;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  line-height: 2.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  text-align: center;
+  border-radius: 999999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  color: #000;
+
+  text-decoration: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.close-button {
+  background-color: #c20019;
+  border-radius: 999999px;
+  color: white;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opacity-1 {
+  opacity: 1; 
+} */
