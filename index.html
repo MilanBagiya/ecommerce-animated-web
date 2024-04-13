@@ -307,13 +307,52 @@
       </div>
     </header>
 
-    <div
-      class="bottom-section flex align-start justify-start md:px-sideMargin z-[90] gap-6"
-    >
-      <h2>2024 @ COPYRIGHT</h2>
-      <h2>FACEBOOK</h2>
-      <h2>YOUTUBE</h2>
-      <h2>INSTAGRAM</h2>
+    <div>
+      <div
+        class="bottom-section flex align-center justify-between p-mobileMargin md:px-sideMargin z-[90] pointer-events-none"
+      >
+        <div
+          class="flex align-center justify-start md:px-sideMargin z-[90] gap-6"
+        >
+          <h2>2024 @ COPYRIGHT</h2>
+          <h2>FACEBOOK</h2>
+          <h2>YOUTUBE</h2>
+          <h2>INSTAGRAM</h2>
+        </div>
+
+        <button
+          type="button"
+          data-search-toggle=""
+          class="header__search-toggle bg-colorCream relative grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition duration-300 ease-curve focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
+          id="header__search-button"
+          aria-label="Search"
+        >
+          <span
+            class="header__search-button--closed absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M17.4999 17.5L13.169 13.1692M13.169 13.1692C14.3412 11.9971 14.9997 10.4073 14.9997 8.74962C14.9997 7.09196 14.3412 5.50219 13.169 4.33004C11.9969 3.15789 10.4071 2.49939 8.74944 2.49939C7.09178 2.49939 5.502 3.15789 4.32986 4.33004C3.15771 5.50219 2.49921 7.09196 2.49921 8.74962C2.49921 10.4073 3.15771 11.9971 4.32986 13.1692C5.502 14.3414 7.09178 14.9999 8.74944 14.9999C10.4071 14.9999 11.9969 14.3414 13.169 13.1692Z"
+                stroke="currentColor"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </span>
+          <span
+            aria-label="Close"
+            class="header__search-button--active absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
+            >❌</span
+          >
+        </button>
+      </div>
     </div>
 
     <!-- TODO: CART DRAWER -->
@@ -384,28 +423,18 @@
                     <div class="price">$37</div>
                   </div>
                   <product-form>
-                    <input
+                    <input type="hidden" value="product" /><input
                       type="hidden"
-                      name="form_type"
-                      value="product"
-                    /><input type="hidden" name="utf8" value="✓" /><input
-                      type="hidden"
-                      name="id"
-                      value="42839753949373"
-                    />
+                      value="✓"
+                    /><input type="hidden" name="id" value="42839753949373" />
                     <button
                       type="submit"
                       name="add"
                       class="flex whitespace-nowrap text-xs text-colorRed hover:text-colorBlack border-0 bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
                     >
                       Add +</button
-                    ><input
+                    ><input type="hidden" value="7477191049405" /><input
                       type="hidden"
-                      name="product-id"
-                      value="7477191049405"
-                    /><input
-                      type="hidden"
-                      name="section-id"
                       value="cart-drawer"
                     />
                   </product-form>
@@ -440,28 +469,18 @@
                     <div class="price">$37</div>
                   </div>
                   <product-form>
-                    <input
+                    <input type="hidden" name="" value="product" /><input
                       type="hidden"
-                      name="form_type"
-                      value="product"
-                    /><input type="hidden" name="utf8" value="✓" /><input
-                      type="hidden"
-                      name="id"
-                      value="42157064978621"
-                    />
+                      value="✓"
+                    /><input type="hidden" name="id" value="42157064978621" />
                     <button
                       type="submit"
                       name="add"
                       class="flex whitespace-nowrap text-xs text-colorRed hover:text-colorBlack border-0 bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
                     >
                       Add +</button
-                    ><input
+                    ><input type="hidden" value="7278146158781" /><input
                       type="hidden"
-                      name="product-id"
-                      value="7278146158781"
-                    /><input
-                      type="hidden"
-                      name="section-id"
                       value="cart-drawer"
                     />
                   </product-form>
@@ -1120,8 +1139,6 @@
     <!-- TODO: MAIN SECTION -->
     <main>
       <section>
-        <!-- TODO: BG CLASS -->
-        <!-- bg-colorBackground -->
         <div
           class="section flex flex-col justify-center py-10 lg:py-25"
           data-section-theme="#000"
@@ -1182,7 +1199,6 @@
                     </a>
 
                     <div
-                      id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
                       data-info-panel=""
                       class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
                     >
@@ -1214,11 +1230,10 @@
                     <product-form
                       class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
                       ><form>
-                        <input
+                        <input type="hidden" name="" value="product" /><input
                           type="hidden"
-                          name="form_type"
-                          value="product"
-                        /><input type="hidden" name="utf8" value="✓" /><input
+                          value="✓"
+                        /><input
                           type="hidden"
                           name="id"
                           value="42071703191741"
@@ -1229,14 +1244,8 @@
                           class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
                         >
                           Add to Cart</button
-                        ><input
+                        ><input type="hidden" value="7278142161085" /><input
                           type="hidden"
-                          name="product-id"
-                          value="7278142161085"
-                        /><input
-                          type="hidden"
-                          name="section-id"
-                          value="template--16828984721597__featured_products_NJwYnR"
                         /></form></product-form
                   ></card-product-media>
                   <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
@@ -1311,7 +1320,6 @@
                     </a>
 
                     <div
-                      id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
                       data-info-panel=""
                       class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
                     >
@@ -1343,11 +1351,10 @@
                     <product-form
                       class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
                       ><form>
-                        <input
+                        <input type="hidden" name="" value="product" /><input
                           type="hidden"
-                          name="form_type"
-                          value="product"
-                        /><input type="hidden" name="utf8" value="✓" /><input
+                          value="✓"
+                        /><input
                           type="hidden"
                           name="id"
                           value="42071703191741"
@@ -1358,14 +1365,8 @@
                           class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
                         >
                           Add to Cart</button
-                        ><input
+                        ><input type="hidden" value="7278142161085" /><input
                           type="hidden"
-                          name="product-id"
-                          value="7278142161085"
-                        /><input
-                          type="hidden"
-                          name="section-id"
-                          value="template--16828984721597__featured_products_NJwYnR"
                         /></form></product-form
                   ></card-product-media>
                   <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
@@ -1440,7 +1441,6 @@
                     </a>
 
                     <div
-                      id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
                       data-info-panel=""
                       class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
                     >
@@ -1472,11 +1472,10 @@
                     <product-form
                       class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
                       ><form>
-                        <input
+                        <input type="hidden" name="" value="product" /><input
                           type="hidden"
-                          name="form_type"
-                          value="product"
-                        /><input type="hidden" name="utf8" value="✓" /><input
+                          value="✓"
+                        /><input
                           type="hidden"
                           name="id"
                           value="42071703191741"
@@ -1487,14 +1486,8 @@
                           class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
                         >
                           Add to Cart</button
-                        ><input
+                        ><input type="hidden" value="7278142161085" /><input
                           type="hidden"
-                          name="product-id"
-                          value="7278142161085"
-                        /><input
-                          type="hidden"
-                          name="section-id"
-                          value="template--16828984721597__featured_products_NJwYnR"
                         /></form></product-form
                   ></card-product-media>
                   <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
@@ -1570,7 +1563,6 @@
                     </a>
 
                     <div
-                      id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
                       data-info-panel=""
                       class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
                     >
@@ -1602,11 +1594,10 @@
                     <product-form
                       class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
                       ><form>
-                        <input
+                        <input type="hidden" name="" value="product" /><input
                           type="hidden"
-                          name="form_type"
-                          value="product"
-                        /><input type="hidden" name="utf8" value="✓" /><input
+                          value="✓"
+                        /><input
                           type="hidden"
                           name="id"
                           value="42071703191741"
@@ -1617,14 +1608,8 @@
                           class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
                         >
                           Add to Cart</button
-                        ><input
+                        ><input type="hidden" value="7278142161085" /><input
                           type="hidden"
-                          name="product-id"
-                          value="7278142161085"
-                        /><input
-                          type="hidden"
-                          name="section-id"
-                          value="template--16828984721597__featured_products_NJwYnR"
                         /></form></product-form
                   ></card-product-media>
                   <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
@@ -1699,7 +1684,6 @@
                     </a>
 
                     <div
-                      id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
                       data-info-panel=""
                       class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
                     >
@@ -1731,11 +1715,10 @@
                     <product-form
                       class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
                       ><form>
-                        <input
+                        <input type="hidden" name="" value="product" /><input
                           type="hidden"
-                          name="form_type"
-                          value="product"
-                        /><input type="hidden" name="utf8" value="✓" /><input
+                          value="✓"
+                        /><input
                           type="hidden"
                           name="id"
                           value="42071703191741"
@@ -1746,14 +1729,8 @@
                           class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
                         >
                           Add to Cart</button
-                        ><input
+                        ><input type="hidden" value="7278142161085" /><input
                           type="hidden"
-                          name="product-id"
-                          value="7278142161085"
-                        /><input
-                          type="hidden"
-                          name="section-id"
-                          value="template--16828984721597__featured_products_NJwYnR"
                         /></form></product-form
                   ></card-product-media>
                   <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
@@ -1828,7 +1805,6 @@
                     </a>
 
                     <div
-                      id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
                       data-info-panel=""
                       class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
                     >
@@ -1860,11 +1836,10 @@
                     <product-form
                       class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
                       ><form>
-                        <input
+                        <input type="hidden" name="" value="product" /><input
                           type="hidden"
-                          name="form_type"
-                          value="product"
-                        /><input type="hidden" name="utf8" value="✓" /><input
+                          value="✓"
+                        /><input
                           type="hidden"
                           name="id"
                           value="42071703191741"
@@ -1875,14 +1850,8 @@
                           class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
                         >
                           Add to Cart</button
-                        ><input
+                        ><input type="hidden" value="7278142161085" /><input
                           type="hidden"
-                          name="product-id"
-                          value="7278142161085"
-                        /><input
-                          type="hidden"
-                          name="section-id"
-                          value="template--16828984721597__featured_products_NJwYnR"
                         /></form></product-form
                   ></card-product-media>
                   <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
@@ -1957,7 +1926,6 @@
                     </a>
 
                     <div
-                      id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
                       data-info-panel=""
                       class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
                     >
@@ -1989,11 +1957,10 @@
                     <product-form
                       class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
                       ><form>
-                        <input
+                        <input type="hidden" name="" value="product" /><input
                           type="hidden"
-                          name="form_type"
-                          value="product"
-                        /><input type="hidden" name="utf8" value="✓" /><input
+                          value="✓"
+                        /><input
                           type="hidden"
                           name="id"
                           value="42071703191741"
@@ -2004,14 +1971,8 @@
                           class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
                         >
                           Add to Cart</button
-                        ><input
+                        ><input type="hidden" value="7278142161085" /><input
                           type="hidden"
-                          name="product-id"
-                          value="7278142161085"
-                        /><input
-                          type="hidden"
-                          name="section-id"
-                          value="template--16828984721597__featured_products_NJwYnR"
                         /></form></product-form
                   ></card-product-media>
                   <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
@@ -2086,7 +2047,6 @@
                     </a>
 
                     <div
-                      id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
                       data-info-panel=""
                       class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
                     >
@@ -2118,11 +2078,10 @@
                     <product-form
                       class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
                       ><form>
-                        <input
+                        <input type="hidden" name="" value="product" /><input
                           type="hidden"
-                          name="form_type"
-                          value="product"
-                        /><input type="hidden" name="utf8" value="✓" /><input
+                          value="✓"
+                        /><input
                           type="hidden"
                           name="id"
                           value="42071703191741"
@@ -2133,14 +2092,8 @@
                           class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
                         >
                           Add to Cart</button
-                        ><input
+                        ><input type="hidden" value="7278142161085" /><input
                           type="hidden"
-                          name="product-id"
-                          value="7278142161085"
-                        /><input
-                          type="hidden"
-                          name="section-id"
-                          value="template--16828984721597__featured_products_NJwYnR"
                         /></form></product-form
                   ></card-product-media>
                   <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">

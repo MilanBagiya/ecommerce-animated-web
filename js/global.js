@@ -252,10 +252,7 @@ class VariantSelects extends HTMLElement {
   onVariantChange() {
     this.updateOptions(),
       this.updateMasterId(),
-      this.toggleAddButton(!0, "", !1),
-      this.currentVariant
-        ? (this.updateURL(), this.updateVariantInput())
-        : (this.toggleAddButton(!0, "", !0), this.setUnavailable());
+      this.toggleAddButton(!0, "", !1);
   }
   updateMasterId() {
     this.currentVariant = this.getVariantData().find(
@@ -264,26 +261,6 @@ class VariantSelects extends HTMLElement {
           .map((option, index) => this.options[index] === option)
           .includes(!1)
     );
-  }
-  updateURL() {
-    !this.currentVariant ||
-      this.dataset.updateUrl === "false" ||
-      window.history.replaceState(
-        {},
-        "",
-        `${this.dataset.url}?variant=${this.currentVariant.id}`
-      );
-  }
-  updateVariantInput() {
-    document
-      .querySelectorAll(
-        `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`
-      )
-      .forEach((productForm) => {
-        const input = productForm.querySelector('input[name="id"]');
-        (input.value = this.currentVariant.id),
-          input.dispatchEvent(new Event("change", { bubbles: !0 }));
-      });
   }
   toggleAddButton(disable = !0, text, modifyClass = !0) {
     const productForm = document.getElementById(
