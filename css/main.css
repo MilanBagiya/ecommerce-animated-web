@@ -1985,6 +1985,10 @@ video {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+  .lg\:py-25 {
+    padding-top: 5.75rem;
+    padding-bottom: 5.75rem;
+  }
   .lg\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -2041,6 +2045,9 @@ video {
   }
   .xl\:w-\[30\%\] {
     width: 30%;
+  }
+  .xl\:w-\[25\%\] {
+    width: 25%;
   }
   .xl\:px-sideMargin {
     padding-left: var(--side-margin);
