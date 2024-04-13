@@ -34,7 +34,7 @@
     <!-- TODO: BACKDROP BLUR SECTION -->
     <div
       data-nav-backdrop=""
-      class="header__dropdown-backdrop tw-fixed tw-w-full tw-h-full tw-left-0 tw-top-0 tw-invisible tw-opacity-0 tw-pointer-events-auto tw-transition-all tw-duration-300 tw-ease-curve tw-z-10"
+      class="header__dropdown-backdrop fixed w-full h-full left-0 top-0 invisible opacity-0 pointer-events-auto transition-all duration-300 ease-curve z-10"
     ></div>
 
     <!-- TODO: ANIMATION FOR MARQUEE TEXT -->
@@ -51,43 +51,39 @@
     <!-- TODO: HEADER SECTION -->
     <header class="header-section">
       <div
-        class="tw-flex tw-align-start tw-justify-between tw-absolute tw-top-0 tw-right-0 tw-left-0 tw-p-mobileMargin md:tw-pt-topMargin md:tw-px-sideMargin tw-z-[90] tw-pointer-events-none"
+        class="flex align-start justify-between absolute top-0 right-0 left-0 p-mobileMargin md:pt-topMargin md:px-sideMargin z-[90] pointer-events-none"
       >
-        <div
-          class="header-desktop-nav tw-relative tw-group tw-hidden md:tw-block"
-        >
-          <ul
-            class="header__desktop-nav tw-p-0 tw-m-0 tw-rounded-full tw-list-none"
-          >
+        <div class="header-desktop-nav relative group hidden md:block">
+          <ul class="header__desktop-nav p-0 m-0 rounded-full list-none">
             <div
-              class="header__nav-background tw-absolute tw-inset-0 tw-w-full tw-h-13 tw-bg-colorCream tw-rounded-full tw-opacity-0 tw-transition tw-duration-300 tw-ease-curve tw-z-[1] group-hover:tw-opacity-100"
+              class="header__nav-background absolute inset-0 w-full h-13 bg-colorCream rounded-full opacity-0 transition duration-300 ease-curve z-[1] group-hover:opacity-100"
               style="transform: translateX(0px)"
             ></div>
 
-            <li class="tw-inline-block tw-relative tw-z-[2]">
+            <li class="inline-block relative z-[2]">
               <a
                 href=""
                 data-nav-level-1=""
                 data-menu-toggle="shop"
-                class="tw-px-6 tw-py-4 tw-inline-block tw-w-full tw-h-full tw-pointer-events-auto tw-uppercase tw-text-colorMainNav hover:tw-text-colorRed tw-transition-colors tw-duration-300 tw-ease-curve tw-rounded-full"
+                class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
                 >PRODUCT</a
               >
             </li>
 
-            <li class="tw-inline-block tw-relative tw-z-[2]">
+            <li class="inline-block relative z-[2]">
               <a
                 href=""
                 data-nav-level-1=""
-                class="tw-px-6 tw-py-4 tw-inline-block tw-w-full tw-h-full tw-pointer-events-auto tw-uppercase tw-text-colorMainNav hover:tw-text-colorRed tw-transition-colors tw-duration-300 tw-ease-curve tw-rounded-full"
+                class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
                 >ABOUT</a
               >
             </li>
 
-            <li class="tw-inline-block tw-relative tw-z-[2]">
+            <li class="inline-block relative z-[2]">
               <a
                 href=""
                 data-nav-level-1=""
-                class="tw-px-6 tw-py-4 tw-inline-block tw-w-full tw-h-full tw-pointer-events-auto tw-uppercase tw-text-colorMainNav hover:tw-text-colorRed tw-transition-colors tw-duration-300 tw-ease-curve tw-rounded-full"
+                class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
                 >OTHER</a
               >
             </li>
@@ -95,12 +91,12 @@
         </div>
 
         <div
-          class="tw-invisible header__logo tw-min-w-[40px] tw-relative tw-transition-filter tw-duration-600 tw-ease-curve tw-pointer-events-auto tw-will-change-filter hover:tw-filter hover:tw-blur hover:tw-duration-300 hover:tw-ease-curve tw-z-10"
+          class="invisible header__logo min-w-[40px] relative transition-filter duration-600 ease-curve pointer-events-auto will-change-filter hover:filter hover:blur hover:duration-300 hover:ease-curve z-10"
         >
-          <a href="/" class="tw-text-colorLogo" aria-label="Kit:"
+          <a href="/" class="text-colorLogo" aria-label="Kit:"
             ><svg
               aria-label="Kit: icon logo"
-              class="logo--mini tw-w-[40px] tw-h-auto"
+              class="logo--mini w-[40px] h-auto"
               width="40"
               height="100"
               viewBox="0 0 40 100"
@@ -122,21 +118,21 @@
         </div>
 
         <div
-          class="header__dropdown tw-absolute tw-top-full tw-w-full tw-left-0 tw-right-0 tw-px-smallMargin xl:tw-px-sideMargin tw-hidden md:tw-flex tw-justify-center tw-invisible tw-opacity-0 -tw-translate-y-10 tw-ease-curve tw-duration-500 tw-pointer-events-none"
+          class="header__dropdown absolute top-full w-full left-0 right-0 px-smallMargin xl:px-sideMargin hidden md:flex justify-center invisible opacity-0 -translate-y-10 ease-curve duration-500 pointer-events-none"
           data-dropdown-menu="shop"
           aria-expanded="false"
         >
           <div
-            class="tw-bg-colorCream tw-rounded-3xl tw-py-smallMargin tw-max-w-full tw-flex tw-pointer-events-auto tw-shadow-modals"
+            class="bg-colorCream rounded-3xl py-smallMargin max-w-full flex pointer-events-auto shadow-modals"
           >
             <div
-              class="tw-w-full tw-min-w-[180px] tw-max-w-[220px] tw-shrink-1 tw-grow-1 tw-pr-smallMargin tw-border-r tw-border-colorBlack tw-pl-smallMargin"
+              class="w-full min-w-[180px] max-w-[220px] shrink-1 grow-1 pr-smallMargin border-r border-colorBlack pl-smallMargin"
             >
               <ul class="">
-                <li class="tw-group tw-flex">
+                <li class="group flex">
                   <a
                     href="/collections/best-sellers"
-                    class="tw-uppercase tw-text-md tw-relative tw-flex tw-items-center tw-py-2"
+                    class="uppercase text-md relative flex items-center py-2"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +140,7 @@
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      class="tw-absolute tw-left-0 tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300"
+                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
                     >
                       <path
                         d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
@@ -152,18 +148,18 @@
                       ></path>
                     </svg>
                     <span
-                      class="tw-translate-x-0 group-hover:tw-translate-x-8 tw-transition-transform tw-ease-curve tw-duration-300"
+                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
                       >Best Sellers
 
-                      <span class="tw-text-[0.5rem]">25</span>
+                      <span class="text-[0.5rem]">25</span>
                     </span>
                   </a>
                 </li>
 
-                <li class="tw-group tw-flex">
+                <li class="group flex">
                   <a
                     href="/collections/latest"
-                    class="tw-uppercase tw-text-md tw-relative tw-flex tw-items-center tw-py-2"
+                    class="uppercase text-md relative flex items-center py-2"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +167,7 @@
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      class="tw-absolute tw-left-0 tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300"
+                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
                     >
                       <path
                         d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
@@ -179,18 +175,18 @@
                       ></path>
                     </svg>
                     <span
-                      class="tw-translate-x-0 group-hover:tw-translate-x-8 tw-transition-transform tw-ease-curve tw-duration-300"
+                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
                       >Latest
 
-                      <span class="tw-text-[0.5rem]">01</span>
+                      <span class="text-[0.5rem]">01</span>
                     </span>
                   </a>
                 </li>
 
-                <li class="tw-group tw-flex">
+                <li class="group flex">
                   <a
                     href="/collections/all"
-                    class="tw-uppercase tw-text-md tw-relative tw-flex tw-items-center tw-py-2"
+                    class="uppercase text-md relative flex items-center py-2"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +194,7 @@
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      class="tw-absolute tw-left-0 tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300"
+                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
                     >
                       <path
                         d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
@@ -206,10 +202,10 @@
                       ></path>
                     </svg>
                     <span
-                      class="tw-translate-x-0 group-hover:tw-translate-x-8 tw-transition-transform tw-ease-curve tw-duration-300"
+                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
                       >All
 
-                      <span class="tw-text-[0.5rem]">25</span>
+                      <span class="text-[0.5rem]">25</span>
                     </span>
                   </a>
                 </li>
@@ -219,17 +215,17 @@
         </div>
 
         <div
-          class="tw-flex tw-flex-wrap tw-justify-end md:tw-flex-col-reverse tw-w-[100px] md:tw-w-[40px] tw-gap-[20px] tw-z-30 tw-pointer-events-auto"
+          class="flex flex-wrap justify-end md:flex-col-reverse w-[100px] md:w-[40px] gap-[20px] z-30 pointer-events-auto"
         >
           <button
             type="button"
             data-search-toggle=""
-            class="header__search-toggle tw-bg-colorCream tw-relative tw-grow-0 tw-shrink-0 tw-w-10 tw-h-10 tw-text-xs tw-leading-10 tw-text-center tw-flex tw-items-center tw-justify-center tw-rounded-full tw-cursor-pointer tw-transition tw-duration-300 tw-ease-curve focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+            class="header__search-toggle bg-colorCream relative grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition duration-300 ease-curve focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
             id="header__search-button"
             aria-label="Search"
           >
             <span
-              class="header__search-button--closed tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-transition-opacity tw-ease-curve tw-duration-300"
+              class="header__search-button--closed absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +245,7 @@
             </span>
             <span
               aria-label="Close"
-              class="header__search-button--active tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-transition-opacity tw-ease-curve tw-duration-300"
+              class="header__search-button--active absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
               >❌</span
             >
           </button>
@@ -257,12 +253,12 @@
           <a
             data-cart-toggle=""
             type="button"
-            class="header__cart-button tw-bg-colorCream tw-relative tw-grow-0 tw-shrink-0 tw-w-10 tw-h-10 tw-text-xs tw-leading-10 tw-text-center tw-flex tw-items-center tw-justify-center tw-rounded-full tw-cursor-pointer tw-transition-colors tw-duration-300 tw-ease-curve focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+            class="header__cart-button bg-colorCream relative grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition-colors duration-300 ease-curve focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
             id="header__cart-button"
             aria-label="Cart toggle"
           >
             <span
-              class="header__cart-button--closed tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-transition-opacity tw-ease-curve tw-duration-300"
+              class="header__cart-button--closed absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -286,20 +282,18 @@
                   class="cart-items-indicator"
                 ></circle>
               </svg>
-              <span class="tw-invisible tw-absolute" data-cart-item-count=""
-                >0</span
-              >
+              <span class="invisible absolute" data-cart-item-count="">0</span>
             </span>
             <span
               aria-label="Close"
-              class="header__cart-button--active tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-transition-opacity tw-ease-curve tw-duration-300"
+              class="header__cart-button--active absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
               >❌</span
             >
           </a>
           <button
             type="button"
             data-mobile-nav-toggle=""
-            class="header__hamburger tw-bg-colorCream tw-grow-0 tw-shrink-0 tw-w-10 tw-h-10 tw-text-xs tw-leading-10 tw-text-center tw-flex tw-items-center tw-justify-center tw-rounded-full tw-cursor-pointer tw-transition-colors tw-duration-300 tw-ease-curve md:tw-hidden focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+            class="header__hamburger bg-colorCream grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition-colors duration-300 ease-curve md:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
             id="header__hamburger"
             aria-label="Mobile navigation toggle"
           >
@@ -314,80 +308,76 @@
     </header>
 
     <div
-      class="bottom-section tw-flex tw-align-start tw-justify-between  md:tw-px-sideMargin tw-z-[90]"
+      class="bottom-section flex align-start justify-between md:px-sideMargin z-[90]"
     >
       <h2>BOTTOM</h2>
     </div>
 
     <!-- TODO: CART DRAWER -->
     <cart-drawer
-      class="tw-fixed tw-inset-0 tw-w-full tw-bg-colorCream tw-overflow-y-scroll tw-z-50 tw-opacity-0 tw-invisible -tw-translate-y-20 md:tw-translate-y-0 md:tw-translate-x-4 tw-transition-drawers tw-ease-curve tw-duration-500 md:tw-w-[442px] md:tw-top-smallMargin md:tw-right-[104px] md:tw-left-[unset] tw-max-h-full md:tw-h-cartHeight tw-rounded-b-2xl md:tw-rounded-2xl tw-pt-[164px] md:tw-pt-smallMargin tw-px-mobileMargin md:tw-px-smallMargin tw-flex tw-flex-col tw-bottom-[unset] tw-shadow-modals no-items"
+      class="fixed inset-0 w-full bg-colorCream overflow-y-scroll z-50 opacity-0 invisible -translate-y-20 md:translate-y-0 md:translate-x-4 transition-drawers ease-curve duration-500 md:w-[442px] md:top-smallMargin md:right-[104px] md:left-[unset] max-h-full md:h-cartHeight rounded-b-2xl md:rounded-2xl pt-[164px] md:pt-smallMargin px-mobileMargin md:px-smallMargin flex flex-col bottom-[unset] shadow-modals no-items"
     >
-      <div id="cart" class="tw-flex tw-flex-col tw-grow">
+      <div id="cart" class="flex flex-col grow">
         <div class="cart__content">
-          <h4 class="tw-text-xl tw-uppercase tw-mb-4">
+          <h4 class="text-xl uppercase mb-4">
             My Bag <span data-cart-item-count="">(0)</span>
           </h4>
 
-          <div class="cart__free-shipping-wrapper tw-mb-6">
+          <div class="cart__free-shipping-wrapper mb-6">
             <div
-              class="cart__free-shipping-progress tw-relative tw-h-1.5 tw-bg-colorOffWhite tw-rounded tw-mb-3 tw-overflow-hidden"
+              class="cart__free-shipping-progress relative h-1.5 bg-colorOffWhite rounded mb-3 overflow-hidden"
             >
               <div
-                class="cart__free-shipping-progress-bar tw-absolute tw-top-0 tw-left-0 tw-w-1/2 tw-h-full tw-bg-colorRed tw-transition tw-ease-curve tw-ease-300"
+                class="cart__free-shipping-progress-bar absolute top-0 left-0 w-1/2 h-full bg-colorRed transition ease-curve ease-300"
                 style="width: 0%"
               ></div>
             </div>
-            <div class="cart__free-shipping tw-text-[10px]">
+            <div class="cart__free-shipping text-[10px]">
               Spend another $50 to receive FREE SHIPPING
             </div>
           </div>
           <div
-            class="cart__items tw-border-t tw-border-dashed tw-border-colorBlack tw-mb-20"
+            class="cart__items border-t border-dashed border-colorBlack mb-20"
           >
             <cart-items>
               <form id="cart__form">
-                <div class="cart__no-items tw-text-sm tw-py-4">
+                <div class="cart__no-items text-sm py-4">
                   No items in your cart
                 </div>
               </form>
             </cart-items>
           </div>
         </div>
-        <div class="cart__recommendations tw-mt-auto">
+        <div class="cart__recommendations mt-auto">
           <cart-recommendations class="cart__recommended">
-            <h4 class="tw-text-xs tw-uppercase tw-mb-4">Build your kit</h4>
-            <ul class="tw-list-none" role="list">
+            <h4 class="text-xs uppercase mb-4">Build your kit</h4>
+            <ul class="list-none" role="list">
               <li>
                 <div
-                  class="list-product tw-flex tw-items-center tw-border-t tw-border-dashed tw-border-colorBlack tw-py-2"
+                  class="list-product flex items-center border-t border-dashed border-colorBlack py-2"
                 >
                   <div
-                    class="list-product__image tw-w-[48px] tw-h-[48px] tw-shrink-0 tw-grow-0 tw-flex tw-justify-center tw-items-center tw-mr-3"
+                    class="list-product__image w-[48px] h-[48px] shrink-0 grow-0 flex justify-center items-center mr-3"
                   >
-                    <a href="/" class="tw-block tw-w-full tw-h-full">
+                    <a href="/" class="block w-full h-full">
                       <img
                         src="//cdn.shopify.com/s/files/1/0621/9313/9901/files/KIT_E-COMM_-_SMOOTHING_CONCENTRATE.png?format=webp&amp;v=1712026687&amp;width=100"
                         width="100"
                         height="100"
                         loading="lazy"
-                        class="tw-object-contain tw-w-full tw-h-full"
+                        class="object-contain w-full h-full"
                       />
                     </a>
                   </div>
-                  <div
-                    class="list-product__meta tw-grow tw-text-xs tw-uppercase"
-                  >
+                  <div class="list-product__meta grow text-xs uppercase">
                     <div class="list-product__title">
                       <a href="/"> Smoothing Concentrate</a>
                     </div>
-                    <div class="list-product__variant tw-text-colorGrey">
+                    <div class="list-product__variant text-colorGrey">
                       30ML / 1.01 FL. OZ
                     </div>
                   </div>
-                  <div
-                    class="list-product__price tw-text-xs tw-uppercase tw-px-4"
-                  >
+                  <div class="list-product__price text-xs uppercase px-4">
                     <div class="price">$37</div>
                   </div>
                   <product-form>
@@ -403,7 +393,7 @@
                     <button
                       type="submit"
                       name="add"
-                      class="tw-flex tw-whitespace-nowrap tw-text-xs tw-text-colorRed hover:tw-text-colorBlack tw-border-0 tw-bg-transparent focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+                      class="flex whitespace-nowrap text-xs text-colorRed hover:text-colorBlack border-0 bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
                     >
                       Add +</button
                     ><input
@@ -420,34 +410,30 @@
               </li>
               <li>
                 <div
-                  class="list-product tw-flex tw-items-center tw-border-t tw-border-dashed tw-border-colorBlack tw-py-2"
+                  class="list-product flex items-center border-t border-dashed border-colorBlack py-2"
                 >
                   <div
-                    class="list-product__image tw-w-[48px] tw-h-[48px] tw-shrink-0 tw-grow-0 tw-flex tw-justify-center tw-items-center tw-mr-3"
+                    class="list-product__image w-[48px] h-[48px] shrink-0 grow-0 flex justify-center items-center mr-3"
                   >
-                    <a href="/" class="tw-block tw-w-full tw-h-full">
+                    <a href="/" class="block w-full h-full">
                       <img
                         src="//cdn.shopify.com/s/files/1/0621/9313/9901/files/KIT_E-COMM_-_REBALANCING_CONCENTRATE.png?format=webp&amp;v=1712026104&amp;width=100"
                         width="100"
                         height="100"
                         loading="lazy"
-                        class="tw-object-contain tw-w-full tw-h-full"
+                        class="object-contain w-full h-full"
                       />
                     </a>
                   </div>
-                  <div
-                    class="list-product__meta tw-grow tw-text-xs tw-uppercase"
-                  >
+                  <div class="list-product__meta grow text-xs uppercase">
                     <div class="list-product__title">
                       <a href="/"> Replacing Concentrate</a>
                     </div>
-                    <div class="list-product__variant tw-text-colorGrey">
+                    <div class="list-product__variant text-colorGrey">
                       30ML / 1.01 FL. OZ
                     </div>
                   </div>
-                  <div
-                    class="list-product__price tw-text-xs tw-uppercase tw-px-4"
-                  >
+                  <div class="list-product__price text-xs uppercase px-4">
                     <div class="price">$37</div>
                   </div>
                   <product-form>
@@ -463,7 +449,7 @@
                     <button
                       type="submit"
                       name="add"
-                      class="tw-flex tw-whitespace-nowrap tw-text-xs tw-text-colorRed hover:tw-text-colorBlack tw-border-0 tw-bg-transparent focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-colorFocusOulineColor"
+                      class="flex whitespace-nowrap text-xs text-colorRed hover:text-colorBlack border-0 bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
                     >
                       Add +</button
                     ><input
@@ -482,17 +468,17 @@
           </cart-recommendations>
         </div>
         <div
-          class="cart__bottom tw-sticky tw-bottom-0 tw-bg-colorCream tw-pt-4 tw-pb-smallMargin tw-border-t tw-border-dashed tw-border-colorBlack"
+          class="cart__bottom sticky bottom-0 bg-colorCream pt-4 pb-smallMargin border-t border-dashed border-colorBlack"
         >
           <div
-            class="cart__subtotal tw-flex tw-justify-between tw-items-center tw-text-sm md:tw-text-lg tw-uppercase tw-mb-4"
+            class="cart__subtotal flex justify-between items-center text-sm md:text-lg uppercase mb-4"
           >
             Subtotal: <span class="cart__total-price">$0</span>
           </div>
           <div class="cart__checkout">
             <button
               type="submit"
-              class="cart__checkout-button button button--red tw-w-full disabled:tw-bg-colorGrey"
+              class="cart__checkout-button button button--red w-full disabled:bg-colorGrey"
               name="checkout"
               form="cart__form"
               disabled=""
@@ -506,7 +492,7 @@
 
     <!-- TODO: SEARCH COMPONENT -->
     <predictive-search
-      class="search-modal__form tw-fixed tw-inset-0 tw-w-full tw-bg-colorCream tw-overflow-y-scroll tw-z-50 tw-opacity-0 tw-invisible -tw-translate-y-20 md:tw-translate-y-0 md:tw-translate-x-4 tw-transition-drawers tw-ease-curve tw-duration-500 md:tw-w-[442px] md:tw-top-smallMargin md:tw-right-[104px] md:tw-left-[unset] tw-max-h-full md:tw-h-cartHeight tw-rounded-b-2xl md:tw-rounded-2xl tw-pb-smallMargin tw-px-mobileMargin md:tw-px-smallMargin tw-flex tw-flex-col tw-bottom-[unset] tw-shadow-modals"
+      class="search-modal__form fixed inset-0 w-full bg-colorCream overflow-y-scroll z-50 opacity-0 invisible -translate-y-20 md:translate-y-0 md:translate-x-4 transition-drawers ease-curve duration-500 md:w-[442px] md:top-smallMargin md:right-[104px] md:left-[unset] max-h-full md:h-cartHeight rounded-b-2xl md:rounded-2xl pb-smallMargin px-mobileMargin md:px-smallMargin flex flex-col bottom-[unset] shadow-modals"
       data-context="modal"
       data-loading-text="Loading..."
       open="true"
@@ -517,12 +503,10 @@
         role="search"
         class="search search__form"
       >
-        <div
-          class="search__form-field tw-pt-[164px] md:tw-pt-smallMargin tw-pb-2"
-        >
-          <div class="field tw-relative">
+        <div class="search__form-field pt-[164px] md:pt-smallMargin pb-2">
+          <div class="field relative">
             <input
-              class="search__input field__input tw-pr-16"
+              class="search__input field__input pr-16"
               id="Search-In-Modal"
               type="search"
               name="q"
@@ -546,7 +530,7 @@
             <input type="hidden" name="options[prefix]" value="last" />
 
             <button
-              class="search__button field__button tw-absolute tw-top-1/2 -tw-translate-y-1/2 tw-right-2 tw-w-8 tw-h-8 tw-text-colorRed"
+              class="search__button field__button absolute top-1/2 -translate-y-1/2 right-2 w-8 h-8 text-colorRed"
               aria-label="search store..."
             >
               <svg
@@ -584,16 +568,16 @@
         data-no-search-performed=""
       >
         <div
-          class="tw-pb-smallMargin tw-mb-smallMargin tw-border-b tw-border-dashed tw-border-colorBlack"
+          class="pb-smallMargin mb-smallMargin border-b border-dashed border-colorBlack"
         >
-          <h5 class="tw-uppercase tw-text-xs tw-mb-5">Search Suggestions</h5>
+          <h5 class="uppercase text-xs mb-5">Search Suggestions</h5>
 
-          <ul class="tw-text-xs tw-flex tw-flex-col tw-items-stretch">
-            <li class="tw-flex">
+          <ul class="text-xs flex flex-col items-stretch">
+            <li class="flex">
               <button
                 type="button"
                 data-suggested-search="Face Oil"
-                class="tw-group tw-w-full tw-relative tw-flex tw-items-start tw-justify-start tw-gap-1 tw-py-2"
+                class="group w-full relative flex items-start justify-start gap-1 py-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -601,7 +585,7 @@
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  class="tw-absolute tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300 tw-w-4 tw-h-4 tw-top-1/2 tw-left-0 -tw-translate-y-1/2"
+                  class="absolute text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300 w-4 h-4 top-1/2 left-0 -translate-y-1/2"
                 >
                   <path
                     d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
@@ -609,17 +593,17 @@
                   ></path>
                 </svg>
                 <span
-                  class="tw-translate-x-0 group-hover:tw-translate-x-6 group-hover:tw-text-colorRed tw-transition tw-ease-curve tw-duration-300"
+                  class="translate-x-0 group-hover:translate-x-6 group-hover:text-colorRed transition ease-curve duration-300"
                   >Face Oil</span
                 >
               </button>
             </li>
 
-            <li class="tw-flex">
+            <li class="flex">
               <button
                 type="button"
                 data-suggested-search="RE:SET Hand Wash"
-                class="tw-group tw-w-full tw-relative tw-flex tw-items-start tw-justify-start tw-gap-1 tw-py-2"
+                class="group w-full relative flex items-start justify-start gap-1 py-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -627,7 +611,7 @@
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  class="tw-absolute tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300 tw-w-4 tw-h-4 tw-top-1/2 tw-left-0 -tw-translate-y-1/2"
+                  class="absolute text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300 w-4 h-4 top-1/2 left-0 -translate-y-1/2"
                 >
                   <path
                     d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
@@ -635,17 +619,17 @@
                   ></path>
                 </svg>
                 <span
-                  class="tw-translate-x-0 group-hover:tw-translate-x-6 group-hover:tw-text-colorRed tw-transition tw-ease-curve tw-duration-300"
+                  class="translate-x-0 group-hover:translate-x-6 group-hover:text-colorRed transition ease-curve duration-300"
                   >RE:SET Hand Wash</span
                 >
               </button>
             </li>
 
-            <li class="tw-flex">
+            <li class="flex">
               <button
                 type="button"
                 data-suggested-search="Gift Sets"
-                class="tw-group tw-w-full tw-relative tw-flex tw-items-start tw-justify-start tw-gap-1 tw-py-2"
+                class="group w-full relative flex items-start justify-start gap-1 py-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -653,7 +637,7 @@
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  class="tw-absolute tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300 tw-w-4 tw-h-4 tw-top-1/2 tw-left-0 -tw-translate-y-1/2"
+                  class="absolute text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300 w-4 h-4 top-1/2 left-0 -translate-y-1/2"
                 >
                   <path
                     d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
@@ -661,17 +645,17 @@
                   ></path>
                 </svg>
                 <span
-                  class="tw-translate-x-0 group-hover:tw-translate-x-6 group-hover:tw-text-colorRed tw-transition tw-ease-curve tw-duration-300"
+                  class="translate-x-0 group-hover:translate-x-6 group-hover:text-colorRed transition ease-curve duration-300"
                   >Gift Sets</span
                 >
               </button>
             </li>
 
-            <li class="tw-flex">
+            <li class="flex">
               <button
                 type="button"
                 data-suggested-search="Lotion"
-                class="tw-group tw-w-full tw-relative tw-flex tw-items-start tw-justify-start tw-gap-1 tw-py-2"
+                class="group w-full relative flex items-start justify-start gap-1 py-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -679,7 +663,7 @@
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  class="tw-absolute tw-text-colorRed tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-ease-curve tw-duration-300 tw-w-4 tw-h-4 tw-top-1/2 tw-left-0 -tw-translate-y-1/2"
+                  class="absolute text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300 w-4 h-4 top-1/2 left-0 -translate-y-1/2"
                 >
                   <path
                     d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
@@ -687,7 +671,7 @@
                   ></path>
                 </svg>
                 <span
-                  class="tw-translate-x-0 group-hover:tw-translate-x-6 group-hover:tw-text-colorRed tw-transition tw-ease-curve tw-duration-300"
+                  class="translate-x-0 group-hover:translate-x-6 group-hover:text-colorRed transition ease-curve duration-300"
                   >Lotion</span
                 >
               </button>
@@ -697,11 +681,11 @@
 
         <div class="">
           <h5
-            class="tw-uppercase tw-text-xs tw-mb-5 tw-flex tw-justify-between"
+            class="uppercase text-xs mb-5 flex justify-between"
             id="predictive-search-no-search-products"
           >
             Best Sellers
-            <a href="/collections/best-sellers" class="hover:tw-text-colorRed"
+            <a href="/collections/best-sellers" class="hover:text-colorRed"
               >View all</a
             >
           </h5>
@@ -712,19 +696,17 @@
           >
             <li
               id="predictive-search-no-search-product-1"
-              class="predictive-search__list-item tw-flex"
+              class="predictive-search__list-item flex"
               role="option"
               aria-selected="false"
             >
-              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
-                <card-product-media class="lg:tw-relative tw-z-[1]">
-                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+              <div class="group relative grow flex flex-col">
+                <card-product-media class="lg:relative z-[1]">
+                  <a class="relative z-[1] w-full" href="/">
                     <div
-                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                      class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
                     >
-                      <div
-                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
-                      >
+                      <div class="flex justify-center items-center w-full">
                         <img
                           src="//kitskinkind.com.au/cdn/shop/files/Mineral_Cleanser_Front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478323&amp;width=838"
                           alt="Mineral Water Cleanser"
@@ -732,18 +714,18 @@
                           height="1100"
                           loading="lazy"
                           sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
-                          class="tw-object-contain tw-w-full tw-h-full"
+                          class="object-contain w-full h-full"
                         />
                       </div>
                       <div
-                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                        class="absolute bg-colorCream w-full h-full opacity-0 group-hover:opacity-100 top-0 left-0 transition duration-500 ease-curve max-md:hidden"
                       >
                         <video
                           playsinline="playsinline"
                           loop="loop"
                           autoplay=""
                           muted="muted"
-                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          class="h-full w-full object-cover object-left rounded-xl lg:rounded-2xl overflow-hidden"
                           data-lazyvids="loaded"
                           preload="metadata"
                           aria-label="Mineral Water Cleanser"
@@ -761,26 +743,21 @@
                     </div>
                   </a>
                 </card-product-media>
-                <div
-                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
-                >
+                <div class="relative z-0 p-6 lg:p-6 grow flex flex-col">
                   <span
-                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                    class="absolute z-0 top-0 w-full left-0 h-full bg-colorCream group-hover:translate-y-0 rounded-b-xl lg:-translate-y-full transition duration-500 ease-in-out"
                   ></span>
                   <a
-                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    class="flex flex-col justify-center text-center gap-1 grow"
                     href="/"
                   >
-                    <div class="tw-relative tw-text-xs tw-uppercase">
+                    <div class="relative text-xs uppercase">
                       Mineral Water Cleanser
                     </div>
-                    <span
-                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                    <span class="relative text-colorGrey text-xs uppercase"
                       >100ML / 3.38 FL. OZ</span
                     >
-                    <div
-                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
-                    >
+                    <div class="relative mt-auto pt-3 text-xs uppercase">
                       <div class="price">$63</div>
                     </div>
                   </a>
@@ -790,19 +767,17 @@
 
             <li
               id="predictive-search-no-search-product-2"
-              class="predictive-search__list-item tw-flex"
+              class="predictive-search__list-item flex"
               role="option"
               aria-selected="false"
             >
-              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
-                <card-product-media class="lg:tw-relative tw-z-[1]">
-                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+              <div class="group relative grow flex flex-col">
+                <card-product-media class="lg:relative z-[1]">
+                  <a class="relative z-[1] w-full" href="/">
                     <div
-                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                      class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
                     >
-                      <div
-                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
-                      >
+                      <div class="flex justify-center items-center w-full">
                         <img
                           src="//kitskinkind.com.au/cdn/shop/files/Skinkind_Faceoil_Front_front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478513&amp;width=838"
                           alt="Skinkind Face Oil"
@@ -810,18 +785,18 @@
                           height="1100"
                           loading="lazy"
                           sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
-                          class="tw-object-contain tw-w-full tw-h-full"
+                          class="object-contain w-full h-full"
                         />
                       </div>
                       <div
-                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                        class="absolute bg-colorCream w-full h-full opacity-0 group-hover:opacity-100 top-0 left-0 transition duration-500 ease-curve max-md:hidden"
                       >
                         <video
                           playsinline="playsinline"
                           loop="loop"
                           autoplay=""
                           muted="muted"
-                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          class="h-full w-full object-cover object-left rounded-xl lg:rounded-2xl overflow-hidden"
                           data-lazyvids="loaded"
                           preload="metadata"
                           aria-label="Skinkind Face Oil"
@@ -839,26 +814,21 @@
                     </div>
                   </a>
                 </card-product-media>
-                <div
-                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
-                >
+                <div class="relative z-0 p-6 lg:p-6 grow flex flex-col">
                   <span
-                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                    class="absolute z-0 top-0 w-full left-0 h-full bg-colorCream group-hover:translate-y-0 rounded-b-xl lg:-translate-y-full transition duration-500 ease-in-out"
                   ></span>
                   <a
-                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    class="flex flex-col justify-center text-center gap-1 grow"
                     href="/"
                   >
-                    <div class="tw-relative tw-text-xs tw-uppercase">
+                    <div class="relative text-xs uppercase">
                       Skinkind Face Oil
                     </div>
-                    <span
-                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                    <span class="relative text-colorGrey text-xs uppercase"
                       >30ML / 1.01 FL. OZ</span
                     >
-                    <div
-                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
-                    >
+                    <div class="relative mt-auto pt-3 text-xs uppercase">
                       <div class="price">$42</div>
                     </div>
                   </a>
@@ -868,19 +838,17 @@
 
             <li
               id="predictive-search-no-search-product-3"
-              class="predictive-search__list-item tw-flex"
+              class="predictive-search__list-item flex"
               role="option"
               aria-selected="false"
             >
-              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
-                <card-product-media class="lg:tw-relative tw-z-[1]">
-                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+              <div class="group relative grow flex flex-col">
+                <card-product-media class="lg:relative z-[1]">
+                  <a class="relative z-[1] w-full" href="/">
                     <div
-                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                      class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
                     >
-                      <div
-                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
-                      >
+                      <div class="flex justify-center items-center w-full">
                         <img
                           src="//kitskinkind.com.au/cdn/shop/files/Re-lax_Drops_Front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478480&amp;width=838"
                           alt="RE:LAX Herbal Ingestible Drops"
@@ -888,11 +856,11 @@
                           height="1100"
                           loading="lazy"
                           sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
-                          class="tw-object-contain tw-w-full tw-h-full"
+                          class="object-contain w-full h-full"
                         />
                       </div>
                       <div
-                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                        class="absolute bg-colorCream w-full h-full opacity-0 group-hover:opacity-100 top-0 left-0 transition duration-500 ease-curve max-md:hidden"
                       >
                         <img
                           src="//kitskinkind.com.au/cdn/shop/files/Relax_Drops_Group_HOVER.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1657537914&amp;width=838"
@@ -900,33 +868,28 @@
                           width="838"
                           height="1100"
                           loading="lazy"
-                          class="tw-h-full tw-w-full tw-object-cover tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          class="h-full w-full object-cover rounded-xl lg:rounded-2xl overflow-hidden"
                           sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
                         />
                       </div>
                     </div>
                   </a>
                 </card-product-media>
-                <div
-                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
-                >
+                <div class="relative z-0 p-6 lg:p-6 grow flex flex-col">
                   <span
-                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                    class="absolute z-0 top-0 w-full left-0 h-full bg-colorCream group-hover:translate-y-0 rounded-b-xl lg:-translate-y-full transition duration-500 ease-in-out"
                   ></span>
                   <a
-                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    class="flex flex-col justify-center text-center gap-1 grow"
                     href="/"
                   >
-                    <div class="tw-relative tw-text-xs tw-uppercase">
+                    <div class="relative text-xs uppercase">
                       RE:LAX Herbal Ingestible Drops
                     </div>
-                    <span
-                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                    <span class="relative text-colorGrey text-xs uppercase"
                       >60mL Oral Liquid</span
                     >
-                    <div
-                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
-                    >
+                    <div class="relative mt-auto pt-3 text-xs uppercase">
                       <div class="price">$40</div>
                     </div>
                   </a>
@@ -936,19 +899,17 @@
 
             <li
               id="predictive-search-no-search-product-4"
-              class="predictive-search__list-item tw-flex"
+              class="predictive-search__list-item flex"
               role="option"
               aria-selected="false"
             >
-              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
-                <card-product-media class="lg:tw-relative tw-z-[1]">
-                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+              <div class="group relative grow flex flex-col">
+                <card-product-media class="lg:relative z-[1]">
+                  <a class="relative z-[1] w-full" href="/">
                     <div
-                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                      class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
                     >
-                      <div
-                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
-                      >
+                      <div class="flex justify-center items-center w-full">
                         <img
                           src="//kitskinkind.com.au/cdn/shop/files/KIT_E-COMM_-_BRIGHTENING_CONCENTRATE_THUMB_55189982-0054-4bb0-9799-c4d13d8c7f29.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1712097232&amp;width=838"
                           alt="Brightening Concentrate"
@@ -956,18 +917,18 @@
                           height="1100"
                           loading="lazy"
                           sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
-                          class="tw-object-contain tw-w-full tw-h-full"
+                          class="object-contain w-full h-full"
                         />
                       </div>
                       <div
-                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                        class="absolute bg-colorCream w-full h-full opacity-0 group-hover:opacity-100 top-0 left-0 transition duration-500 ease-curve max-md:hidden"
                       >
                         <video
                           playsinline="playsinline"
                           loop="loop"
                           autoplay="autoplay"
                           muted="muted"
-                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          class="h-full w-full object-cover object-left rounded-xl lg:rounded-2xl overflow-hidden"
                           data-lazyvids="unloaded"
                           preload="metadata"
                           aria-label="Brightening Concentrate"
@@ -985,26 +946,21 @@
                     </div>
                   </a>
                 </card-product-media>
-                <div
-                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
-                >
+                <div class="relative z-0 p-6 lg:p-6 grow flex flex-col">
                   <span
-                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                    class="absolute z-0 top-0 w-full left-0 h-full bg-colorCream group-hover:translate-y-0 rounded-b-xl lg:-translate-y-full transition duration-500 ease-in-out"
                   ></span>
                   <a
-                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    class="flex flex-col justify-center text-center gap-1 grow"
                     href="/"
                   >
-                    <div class="tw-relative tw-text-xs tw-uppercase">
+                    <div class="relative text-xs uppercase">
                       Brightening Concentrate
                     </div>
-                    <span
-                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                    <span class="relative text-colorGrey text-xs uppercase"
                       >30ML / 1.01 FL. OZ</span
                     >
-                    <div
-                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
-                    >
+                    <div class="relative mt-auto pt-3 text-xs uppercase">
                       <div class="price">$37</div>
                     </div>
                   </a>
@@ -1014,19 +970,17 @@
 
             <li
               id="predictive-search-no-search-product-5"
-              class="predictive-search__list-item tw-flex"
+              class="predictive-search__list-item flex"
               role="option"
               aria-selected="false"
             >
-              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
-                <card-product-media class="lg:tw-relative tw-z-[1]">
-                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+              <div class="group relative grow flex flex-col">
+                <card-product-media class="lg:relative z-[1]">
+                  <a class="relative z-[1] w-full" href="/">
                     <div
-                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                      class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
                     >
-                      <div
-                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
-                      >
+                      <div class="flex justify-center items-center w-full">
                         <img
                           src="//kitskinkind.com.au/cdn/shop/files/KIT_E-COMM_-_EXFOLIATING_CONCENTRATE_THUMB_675bb779-5845-49f6-8a17-f595b4cde51a.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1712097256&amp;width=838"
                           alt="Exfoliating Concentrate"
@@ -1034,18 +988,18 @@
                           height="1100"
                           loading="lazy"
                           sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
-                          class="tw-object-contain tw-w-full tw-h-full"
+                          class="object-contain w-full h-full"
                         />
                       </div>
                       <div
-                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                        class="absolute bg-colorCream w-full h-full opacity-0 group-hover:opacity-100 top-0 left-0 transition duration-500 ease-curve max-md:hidden"
                       >
                         <video
                           playsinline="playsinline"
                           loop="loop"
                           autoplay="autoplay"
                           muted="muted"
-                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          class="h-full w-full object-cover object-left rounded-xl lg:rounded-2xl overflow-hidden"
                           data-lazyvids="unloaded"
                           preload="metadata"
                           aria-label="Exfoliating Concentrate"
@@ -1063,26 +1017,21 @@
                     </div>
                   </a>
                 </card-product-media>
-                <div
-                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
-                >
+                <div class="relative z-0 p-6 lg:p-6 grow flex flex-col">
                   <span
-                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                    class="absolute z-0 top-0 w-full left-0 h-full bg-colorCream group-hover:translate-y-0 rounded-b-xl lg:-translate-y-full transition duration-500 ease-in-out"
                   ></span>
                   <a
-                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    class="flex flex-col justify-center text-center gap-1 grow"
                     href="/"
                   >
-                    <div class="tw-relative tw-text-xs tw-uppercase">
+                    <div class="relative text-xs uppercase">
                       Exfoliating Concentrate
                     </div>
-                    <span
-                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                    <span class="relative text-colorGrey text-xs uppercase"
                       >30ML / 1.01 FL. OZ</span
                     >
-                    <div
-                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
-                    >
+                    <div class="relative mt-auto pt-3 text-xs uppercase">
                       <div class="price">$37</div>
                     </div>
                   </a>
@@ -1092,19 +1041,17 @@
 
             <li
               id="predictive-search-no-search-product-6"
-              class="predictive-search__list-item tw-flex"
+              class="predictive-search__list-item flex"
               role="option"
               aria-selected="false"
             >
-              <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
-                <card-product-media class="lg:tw-relative tw-z-[1]">
-                  <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+              <div class="group relative grow flex flex-col">
+                <card-product-media class="lg:relative z-[1]">
+                  <a class="relative z-[1] w-full" href="/">
                     <div
-                      class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                      class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
                     >
-                      <div
-                        class="tw-flex tw-justify-center tw-items-center tw-w-full"
-                      >
+                      <div class="flex justify-center items-center w-full">
                         <img
                           src="//kitskinkind.com.au/cdn/shop/files/KIT_E-COMM_-_REBALANCING_CONCENTRATE_THUMB_c56af9b1-9e94-4be3-bd4c-154747ad7a2f.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1712097312&amp;width=838"
                           alt="Rebalancing Concentrate"
@@ -1112,18 +1059,18 @@
                           height="1100"
                           loading="lazy"
                           sizes="(min-width: 800px) 183px, calc((100vw - 32px - 12px) * 0.5)"
-                          class="tw-object-contain tw-w-full tw-h-full"
+                          class="object-contain w-full h-full"
                         />
                       </div>
                       <div
-                        class="tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                        class="absolute bg-colorCream w-full h-full opacity-0 group-hover:opacity-100 top-0 left-0 transition duration-500 ease-curve max-md:hidden"
                       >
                         <video
                           playsinline="playsinline"
                           loop="loop"
                           autoplay="autoplay"
                           muted="muted"
-                          class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                          class="h-full w-full object-cover object-left rounded-xl lg:rounded-2xl overflow-hidden"
                           data-lazyvids="unloaded"
                           preload="metadata"
                           aria-label="Rebalancing Concentrate"
@@ -1141,26 +1088,21 @@
                     </div>
                   </a>
                 </card-product-media>
-                <div
-                  class="tw-relative tw-z-0 tw-p-6 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
-                >
+                <div class="relative z-0 p-6 lg:p-6 grow flex flex-col">
                   <span
-                    class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                    class="absolute z-0 top-0 w-full left-0 h-full bg-colorCream group-hover:translate-y-0 rounded-b-xl lg:-translate-y-full transition duration-500 ease-in-out"
                   ></span>
                   <a
-                    class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                    class="flex flex-col justify-center text-center gap-1 grow"
                     href="/"
                   >
-                    <div class="tw-relative tw-text-xs tw-uppercase">
+                    <div class="relative text-xs uppercase">
                       Rebalancing Concentrate
                     </div>
-                    <span
-                      class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                    <span class="relative text-colorGrey text-xs uppercase"
                       >30ML / 1.01 FL. OZ</span
                     >
-                    <div
-                      class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
-                    >
+                    <div class="relative mt-auto pt-3 text-xs uppercase">
                       <div class="price">$37</div>
                     </div>
                   </a>
@@ -1173,33 +1115,31 @@
     </predictive-search>
 
     <!-- TODO: MAIN SECTION -->
-    <main class="tw-hidden">
+    <main class="hidden">
       <section>
         <!-- TODO: BG CLASS -->
-        <!-- tw-bg-colorBackground -->
+        <!-- bg-colorBackground -->
         <div
-          class="tw-section tw-flex tw-flex-col tw-justify-center tw-py-10 lg:tw-py-20"
+          class="section flex flex-col justify-center py-10 lg:py-20"
           data-section-theme="#000"
         >
-          <featured-products-slider-component class="tw-relative">
+          <featured-products-slider-component class="relative">
             <ul
-              class="tw-flex tw-list-none tw-overflow-x-auto tw-snap-x tw-snap-mandatory tw-scroll-smooth tw-gap-x-2 tw-px-4 lg:tw-px-sideMargin tw-scroll-px-4 lg:tw-scroll-px-sideMargin tw-scrollbar-hide"
+              class="flex list-none overflow-x-auto snap-x snap-mandatory scroll-smooth gap-x-2 px-4 lg:px-sideMargin scroll-px-4 lg:scroll-px-sideMargin scrollbar-hide"
               role="list"
             >
               <li
                 id="Slide-template--16828984721597__featured_products_NJwYnR-1"
-                class="tw-relative tw-flex tw-shrink-0 tw-flex-col tw-overflow-hidden tw-w-[92%] sm:tw-w-[75%] md:tw-w-[40%] xl:tw-w-[30%] tw-snap-start"
+                class="relative flex shrink-0 flex-col overflow-hidden w-[92%] sm:w-[75%] md:w-[40%] xl:w-[30%] snap-start"
                 role="listitem"
               >
-                <div class="tw-group tw-relative tw-grow tw-flex tw-flex-col">
-                  <card-product-media class="lg:tw-relative tw-z-[1]">
-                    <a class="tw-relative tw-z-[1] tw-w-full" href="/">
+                <div class="group relative grow flex flex-col">
+                  <card-product-media class="lg:relative z-[1]">
+                    <a class="relative z-[1] w-full" href="/">
                       <div
-                        class="tw-relative tw-bg-colorCream tw-aspect-[3/4] tw-flex tw-overflow-hidden tw-rounded-t-xl lg:tw-rounded-2xl group-hover:lg:tw-rounded-t-2xl group-hover:lg:tw-rounded-b-none"
+                        class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
                       >
-                        <div
-                          class="tw-flex tw-justify-center tw-items-center tw-w-full"
-                        >
+                        <div class="flex justify-center items-center w-full">
                           <img
                             src="//kitskinkind.com.au/cdn/shop/files/Skinkind_Faceoil_Front_front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478513&amp;width=838"
                             alt="Skinkind Face Oil"
@@ -1210,18 +1150,18 @@
             (min-width: 800px) calc((100vw - 32px - 8px) * 0.40),
             (min-width: 640px) calc((100vw - 32px) * 0.75),
             calc((100vw - 32px) * 0.92)"
-                            class="tw-object-contain tw-w-full tw-h-full"
+                            class="object-contain w-full h-full"
                           />
                         </div>
                         <div
-                          class="tw-p-4 tw-absolute tw-bg-colorCream tw-w-full tw-h-full tw-opacity-0 group-hover:tw-opacity-100 tw-top-0 tw-left-0 tw-transition tw-duration-500 tw-ease-curve max-md:tw-hidden"
+                          class="p-4 absolute bg-colorCream w-full h-full opacity-0 group-hover:opacity-100 top-0 left-0 transition duration-500 ease-curve max-md:hidden"
                         >
                           <video
                             playsinline="playsinline"
                             loop="loop"
                             autoplay=""
                             muted="muted"
-                            class="tw-h-full tw-w-full tw-object-cover tw-object-left tw-rounded-xl lg:tw-rounded-2xl tw-overflow-hidden"
+                            class="h-full w-full object-cover object-left rounded-xl lg:rounded-2xl overflow-hidden"
                             data-lazyvids="loaded"
                             preload="metadata"
                             aria-label="Skinkind Face Oil"
@@ -1242,7 +1182,7 @@
                     <div
                       id="info-panel-7278142161085-template--16828984721597__featured_products_NJwYnR"
                       data-info-panel=""
-                      class="card-product__info-panel tw-p-4 tw-absolute tw-z-[2] tw-bg-colorRed tw-text-colorWhite tw-top-0 tw-left-0 tw-bottom-0 tw-right-0 sm:tw-top-4 sm:tw-left-4 sm:tw-bottom-4 sm:tw-right-4 tw-transition tw-duration-500 tw-ease-curve tw-rounded-xl tw-flex tw-flex-col tw-justify-center tw-opacity-0 tw-invisible tw-text-xs"
+                      class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
                     >
                       <div>
                         <p>Suited for:</p>
@@ -1264,13 +1204,13 @@
                       data-info-toggle=""
                       aria-expanded="false"
                       aria-controls="info-panel-7278142161085"
-                      class="card-product__info-toggle tw-absolute tw-z-[3] tw-top-2 tw-right-2 sm:tw-top-6 sm:tw-right-6 tw-w-5 tw-h-5 tw-rounded-full tw-bg-transparent tw-text-colorRed tw-border tw-border-colorRed tw-text-xs hover:tw-bg-colorRed hover:tw-text-colorWhite hover:tw-border-colorRed"
+                      class="card-product__info-toggle absolute z-[3] top-2 right-2 sm:top-6 sm:right-6 w-5 h-5 rounded-full bg-transparent text-colorRed border border-colorRed text-xs hover:bg-colorRed hover:text-colorWhite hover:border-colorRed"
                     >
                       i
                     </button>
 
                     <product-form
-                      class="tw-absolute lg:tw-opacity-0 lg:tw-translate-y-4 group-hover:tw-opacity-100 group-hover:tw-translate-y-0 tw-bottom-0 tw-w-full tw-p-4 lg:tw-p-8 tw-z-[1] tw-transition tw-ease-curve tw-duration-700"
+                      class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
                       ><form
                         method="post"
                         action="/cart/add"
@@ -1292,7 +1232,7 @@
                         <button
                           type="submit"
                           name="add"
-                          class="button button--full-width !tw-text-sm !tw-border !tw-border-solid !tw-border-colorRed tw-bg-transparent tw-text-colorRed lg:tw-text-colorWhite lg:!tw-bg-colorRed hover:lg:!tw-bg-transparent hover:lg:!tw-text-colorRed !tw-px-3"
+                          class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
                         >
                           Add to Cart</button
                         ><input
@@ -1305,26 +1245,21 @@
                           value="template--16828984721597__featured_products_NJwYnR"
                         /></form></product-form
                   ></card-product-media>
-                  <div
-                    class="tw-relative tw-z-0 tw-p-6 tw-pb-20 lg:tw-p-6 tw-grow tw-flex tw-flex-col"
-                  >
+                  <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
                     <span
-                      class="tw-absolute tw-z-0 tw-top-0 tw-w-full tw-left-0 tw-h-full tw-bg-colorCream group-hover:tw-translate-y-0 tw-rounded-b-xl lg:-tw-translate-y-full tw-transition tw-duration-500 tw-ease-in-out"
+                      class="absolute z-0 top-0 w-full left-0 h-full bg-colorCream group-hover:translate-y-0 rounded-b-xl lg:-translate-y-full transition duration-500 ease-in-out"
                     ></span>
                     <a
-                      class="tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-grow"
+                      class="flex flex-col justify-center text-center gap-1 grow"
                       href="/"
                     >
-                      <div class="tw-relative tw-text-xs tw-uppercase">
+                      <div class="relative text-xs uppercase">
                         Skinkind Face Oil
                       </div>
-                      <span
-                        class="tw-relative tw-text-colorGrey tw-text-xs tw-uppercase"
+                      <span class="relative text-colorGrey text-xs uppercase"
                         >30ML / 1.01 FL. OZ</span
                       >
-                      <div
-                        class="tw-relative tw-mt-auto tw-pt-3 tw-text-xs tw-uppercase"
-                      >
+                      <div class="relative mt-auto pt-3 text-xs uppercase">
                         <div class="price">$42</div>
                       </div>
                     </a>
@@ -1368,7 +1303,7 @@
                 height="3000"
                 loading="lazy"
                 sizes="100vw"
-                class="tw-hidden md:tw-block"
+                class="hidden md:block"
               />
             </div>
           </div>
