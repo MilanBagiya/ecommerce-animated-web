@@ -1,0 +1,30 @@
+.user-open .header__dropdown-backdrop {
+  visibility: visible;
+  z-index: 20;
+  opacity: 1;
+}
+.user-open .header-desktop-nav {
+  visibility: hidden;
+  opacity: 0;
+}
+.user-open .header__hamburger,
+.user-open .header__search-toggle {
+  background-color: var(--off-white);
+}
+user-drawer.active {
+  visibility: visible;
+  --translate-y: 0px;
+  --translate-x: 0px;
+  transform: translate(var(--translate-x), var(--translate-y))
+    rotate(var(--rotate)) skew(var(--skew-x)) skewY(var(--skew-y))
+    scaleX(var(--scale-x)) scaleY(var(--scale-y));
+  opacity: 1;
+}
+.user-item__quantity input::-webkit-outer-spin-button,
+.user-item__quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.user-item__quantity input[type="number"] {
+  -moz-appearance: textfield;
+}

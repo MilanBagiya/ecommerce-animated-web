@@ -54,6 +54,7 @@
 
 body {
   background-color: var(--background-color);
+  color: #000;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
@@ -66,6 +67,8 @@ body {
   justify-content: center;
   background-color: var(--announcement-bar-bgcolour);
   color: var(--announcement-bar-colour);
+
+  /* opacity: 0; */
 }
 
 .announcement-bar .marquee {
@@ -118,5 +121,24 @@ body {
 
   to {
     transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.preloader-line {
+  background-color: #fff;
+  width: 0%;
+  height: 8px;
+  transition: height 0.3s, width 2.5s;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+@media screen and (max-width: 479px) {
+  .preloader-line {
+    height: 4px;
+    transition-duration: 0.3s, 5s;
   }
 }

@@ -68,7 +68,8 @@ class PredictiveSearch extends SearchForm {
       }),
       this.searchToggle.addEventListener("click", this.toggleSearch.bind(this)),
       document.addEventListener("toggleMobileNav", () => this.close(!0, !1)),
-      document.addEventListener("toggleCart", () => this.close(!0, !1));
+      document.addEventListener("toggleCart", () => this.close(!0, !1)),
+      document.addEventListener("toggleUser", () => this.close(!1));
   }
   getQuery() {
     return this.input.value.trim();
@@ -189,40 +190,6 @@ class PredictiveSearch extends SearchForm {
       '[aria-selected="true"] a, button[aria-selected="true"]'
     );
     selectedOption && selectedOption.click();
-  }
-  getSearchResults(searchTerm) {
-    const queryKey = searchTerm.replace(" ", "-").toLowerCase();
-    if ((this.setLiveRegionLoadingState(), this.cachedResults[queryKey])) {
-      this.renderSearchResults(this.cachedResults[queryKey]);
-      return;
-    }
-    fetch(
-      `${routes.predictive_search_url}?q=${encodeURIComponent(
-        searchTerm
-      )}&section_id=predictive-search`,
-      { signal: this.abortController.signal }
-    )
-      .then((response) => {
-        if (!response.ok) {
-          var error = new Error(response.status);
-          throw (this.close(!0), error);
-        }
-        return response.text();
-      })
-      .then((text) => {
-        const resultsMarkup = new DOMParser()
-          .parseFromString(text, "text/html")
-          .querySelector("#shopify-section-predictive-search").innerHTML;
-        this.allPredictiveSearchInstances.forEach(
-          (predictiveSearchInstance) => {
-            predictiveSearchInstance.cachedResults[queryKey] = resultsMarkup;
-          }
-        ),
-          this.renderSearchResults(resultsMarkup);
-      })
-      .catch((error) => {
-        if (error?.code !== 20) throw (this.close(!0), error);
-      });
   }
   setLiveRegionLoadingState() {
     (this.statusElement =

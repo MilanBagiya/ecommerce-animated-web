@@ -1,6 +1,5 @@
 .bottom-section {
   bottom: var(--announcement-bar-sticky-header-offset);
-  z-index: 90;
   width: 100%;
   bottom: 20px;
   position: fixed;
