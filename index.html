@@ -25,11 +25,13 @@
 
     <link rel="stylesheet" href="/css/search.css" />
 
+    <link rel="stylesheet" href="/css/user.css" />
+
     <link rel="stylesheet" href="/css/bottom-bar.css" />
 
     <link rel="stylesheet" href="/css/style.css" />
 
-    <link rel="stylesheet" href="/css/preloader.css" />
+    <link rel="stylesheet" href="/css/loader.css" />
   </head>
 
   <body>
@@ -43,7 +45,7 @@
     ></div>
 
     <!-- TODO: ANIMATION FOR MARQUEE TEXT -->
-    <div class="announcement-bar">
+    <div class="announcement-bar opacity-0">
       <div class="embla marquee">
         <div class="marquee__content">
           <div class="embla__slide">
@@ -53,272 +55,267 @@
       </div>
     </div>
 
-    <!-- TODO: HEADER SECTION -->
-    <header class="header-section">
-      <div
-        class="flex align-start justify-between absolute top-0 right-0 left-0 p-mobileMargin md:px-sideMargin z-[90] pointer-events-none"
+    <!-- TODO: LOADER SECTION -->
+    <header>
+      <nav
+        class="nav test absolute top-0 right-0 left-0 p-mobileMargin md:px-sideMargin z-[90]"
       >
-        <div class="header-desktop-nav relative group hidden md:block">
-          <ul class="header__desktop-nav p-0 m-0 rounded-full list-none">
-            <div
-              class="header__nav-background absolute inset-0 w-full h-13 bg-colorCream rounded-full opacity-0 transition duration-300 ease-curve z-[1] group-hover:opacity-100"
-              style="transform: translateX(0px)"
-            ></div>
+        <div class="menu-new__bt-burger">
+          <div class="header-desktop-nav relative group hidden md:block">
+            <ul class="header__desktop-nav p-0 m-0 rounded-full list-none">
+              <div
+                class="header__nav-background absolute inset-0 w-full h-13 bg-colorCream rounded-full opacity-0 transition duration-300 ease-curve z-[1] group-hover:opacity-100"
+                style="transform: translateX(0px)"
+              ></div>
 
-            <li class="inline-block relative z-[2]">
-              <a
-                href=""
-                data-nav-level-1=""
-                data-menu-toggle="shop"
-                class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
-                >PRODUCT</a
-              >
-            </li>
+              <li class="inline-block relative z-[2]">
+                <a
+                  href=""
+                  data-nav-level-1=""
+                  data-menu-toggle="shop"
+                  class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
+                  >PRODUCT</a
+                >
+              </li>
 
-            <li class="inline-block relative z-[2]">
-              <a
-                href=""
-                data-nav-level-1=""
-                class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
-                >ABOUT</a
-              >
-            </li>
+              <li class="inline-block relative z-[2]">
+                <a
+                  href=""
+                  data-nav-level-1=""
+                  class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
+                  >ABOUT</a
+                >
+              </li>
 
-            <li class="inline-block relative z-[2]">
-              <a
-                href=""
-                data-nav-level-1=""
-                class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
-                >OTHER</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div
-          class="invisible header__logo min-w-[40px] relative transition-filter duration-600 ease-curve pointer-events-auto will-change-filter hover:filter hover:blur hover:duration-300 hover:ease-curve z-10"
-        >
-          <a href="/" class="text-colorLogo" aria-label="Kit:"
-            ><svg
-              aria-label="Kit: icon logo"
-              class="logo--mini w-[40px] h-auto"
-              width="40"
-              height="100"
-              viewBox="0 0 40 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20Z"
-                fill="currentColor"
-              ></path>
-              <path
-                d="M40 80C40 91.0457 31.0457 100 20 100C8.95431 100 0 91.0457 0 80C0 68.9543 8.95431 60 20 60C31.0457 60 40 68.9543 40 80Z"
-                fill="currentColor"
-              ></path>
-            </svg>
-
-            <span class="visually-hidden">kit</span>
-          </a>
-        </div>
-
-        <div
-          class="header__dropdown absolute top-full w-full left-0 right-0 px-smallMargin xl:px-sideMargin hidden md:flex justify-center invisible opacity-0 -translate-y-10 ease-curve duration-500 pointer-events-none"
-          data-dropdown-menu="shop"
-          aria-expanded="false"
-        >
-          <div
-            class="bg-colorCream rounded-3xl py-smallMargin max-w-full flex pointer-events-auto shadow-modals"
-          >
-            <div
-              class="w-full min-w-[180px] max-w-[220px] shrink-1 grow-1 pr-smallMargin border-r border-colorBlack pl-smallMargin"
-            >
-              <ul class="">
-                <li class="group flex">
-                  <a
-                    href="/collections/best-sellers"
-                    class="uppercase text-md relative flex items-center py-2"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                    >
-                      <path
-                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <span
-                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                      >Best Sellers
-
-                      <span class="text-[0.5rem]">25</span>
-                    </span>
-                  </a>
-                </li>
-
-                <li class="group flex">
-                  <a
-                    href="/collections/latest"
-                    class="uppercase text-md relative flex items-center py-2"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                    >
-                      <path
-                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <span
-                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                      >Latest
-
-                      <span class="text-[0.5rem]">01</span>
-                    </span>
-                  </a>
-                </li>
-
-                <li class="group flex">
-                  <a
-                    href="/collections/all"
-                    class="uppercase text-md relative flex items-center py-2"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                    >
-                      <path
-                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <span
-                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                      >All
-
-                      <span class="text-[0.5rem]">25</span>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="inline-block relative z-[2]">
+                <a
+                  href=""
+                  data-nav-level-1=""
+                  class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
+                  >OTHER</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div
-          class="flex flex-wrap justify-end md:flex-col-reverse w-[100px] md:w-[40px] gap-[20px] z-30 pointer-events-auto"
-        >
-          <button
-            type="button"
-            data-search-toggle=""
-            class="header__search-toggle bg-colorCream relative grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition duration-300 ease-curve focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
-            id="header__search-button"
-            aria-label="Search"
-          >
-            <span
-              class="header__search-button--closed absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <path
-                  d="M17.4999 17.5L13.169 13.1692M13.169 13.1692C14.3412 11.9971 14.9997 10.4073 14.9997 8.74962C14.9997 7.09196 14.3412 5.50219 13.169 4.33004C11.9969 3.15789 10.4071 2.49939 8.74944 2.49939C7.09178 2.49939 5.502 3.15789 4.32986 4.33004C3.15771 5.50219 2.49921 7.09196 2.49921 8.74962C2.49921 10.4073 3.15771 11.9971 4.32986 13.1692C5.502 14.3414 7.09178 14.9999 8.74944 14.9999C10.4071 14.9999 11.9969 14.3414 13.169 13.1692Z"
-                  stroke="currentColor"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-            </span>
-            <span
-              aria-label="Close"
-              class="header__search-button--active absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
-              >❌</span
-            >
-          </button>
-
-          <a
-            data-cart-toggle=""
-            type="button"
-            class="header__cart-button bg-colorCream relative grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition-colors duration-300 ease-curve focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
-            id="header__cart-button"
-            aria-label="Cart toggle"
-          >
-            <span
-              class="header__cart-button--closed absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <path
-                  d="M12.5 7.5V5C12.5 3.61929 11.3807 2.5 9.99998 2.5C8.61927 2.5 7.49998 3.61929 7.49998 5V7.5M3.33331 7.5H16.6666V17.5H3.33331V7.5Z"
-                  stroke="currentColor"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <circle
-                  cx="5"
-                  cy="15"
-                  r="5"
-                  fill="currentColor"
-                  class="cart-items-indicator"
-                ></circle>
-              </svg>
-              <span class="invisible absolute" data-cart-item-count="">0</span>
-            </span>
-            <span
-              aria-label="Close"
-              class="header__cart-button--active absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
-              >❌</span
-            >
-          </a>
-          <button
-            type="button"
-            data-mobile-nav-toggle=""
-            class="header__hamburger bg-colorCream grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition-colors duration-300 ease-curve md:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
-            id="header__hamburger"
-            aria-label="Mobile navigation toggle"
-          >
-            <div class="header__hamburger-parts">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
+        <div class="nav__menu home hide">
+          <div>
+            <a href="#" class="p-normal none-decor bt-anchor-2">Contact</a>
+          </div>
         </div>
-      </div>
+
+        <div class="nav__logo logo-bar justify-self-center header-desktop-nav">
+          <div class="logo__image">
+            <img
+              class="pointer-event-none"
+              src="./assets/logo-dark.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="bt_bar_3 justify-self-end">
+          <div
+            class="header__dropdown absolute top-full w-full left-0 right-0 px-smallMargin xl:px-sideMargin hidden md:flex justify-center invisible opacity-0 -translate-y-10 ease-curve duration-500 pointer-events-none"
+            data-dropdown-menu="shop"
+            aria-expanded="false"
+          >
+            <div
+              class="bg-colorCream rounded-3xl py-smallMargin max-w-full flex pointer-events-auto shadow-modals"
+            >
+              <div
+                class="w-full min-w-[180px] max-w-[220px] shrink-1 grow-1 pr-smallMargin border-r border-colorBlack pl-smallMargin"
+              >
+                <ul class="">
+                  <li class="group flex">
+                    <a
+                      href="/collections/best-sellers"
+                      class="uppercase text-md relative flex items-center py-2"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
+                      >
+                        <path
+                          d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <span
+                        class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
+                        >Best Sellers
+
+                        <span class="text-[0.5rem]">25</span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="group flex">
+                    <a
+                      href="/collections/latest"
+                      class="uppercase text-md relative flex items-center py-2"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
+                      >
+                        <path
+                          d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <span
+                        class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
+                        >Latest
+
+                        <span class="text-[0.5rem]">01</span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="group flex">
+                    <a
+                      href="/collections/all"
+                      class="uppercase text-md relative flex items-center py-2"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
+                      >
+                        <path
+                          d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <span
+                        class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
+                        >All
+
+                        <span class="text-[0.5rem]">25</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-wrap justify-end md:flex-col-reverse w-[100px] md:w-[40px] gap-[20px] z-30 pointer-events-auto"
+          >
+            <button
+              type="button"
+              data-search-toggle=""
+              class="header__search-toggle bg-colorCream relative grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition duration-300 ease-curve focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
+              id="header__search-button"
+              aria-label="Search"
+            >
+              <span
+                class="header__search-button--closed absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M17.4999 17.5L13.169 13.1692M13.169 13.1692C14.3412 11.9971 14.9997 10.4073 14.9997 8.74962C14.9997 7.09196 14.3412 5.50219 13.169 4.33004C11.9969 3.15789 10.4071 2.49939 8.74944 2.49939C7.09178 2.49939 5.502 3.15789 4.32986 4.33004C3.15771 5.50219 2.49921 7.09196 2.49921 8.74962C2.49921 10.4073 3.15771 11.9971 4.32986 13.1692C5.502 14.3414 7.09178 14.9999 8.74944 14.9999C10.4071 14.9999 11.9969 14.3414 13.169 13.1692Z"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </span>
+              <span
+                aria-label="Close"
+                class="header__search-button--active absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
+                >❌</span
+              >
+            </button>
+
+            <a
+              data-cart-toggle=""
+              type="button"
+              class="header__cart-button bg-colorCream relative grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition-colors duration-300 ease-curve focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
+              id="header__cart-button"
+              aria-label="Cart toggle"
+            >
+              <span
+                class="header__cart-button--closed absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M12.5 7.5V5C12.5 3.61929 11.3807 2.5 9.99998 2.5C8.61927 2.5 7.49998 3.61929 7.49998 5V7.5M3.33331 7.5H16.6666V17.5H3.33331V7.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <circle
+                    cx="5"
+                    cy="15"
+                    r="5"
+                    fill="currentColor"
+                    class="cart-items-indicator"
+                  ></circle>
+                </svg>
+                <span class="invisible absolute" data-cart-item-count=""
+                  >0</span
+                >
+              </span>
+              <span
+                aria-label="Close"
+                class="header__cart-button--active absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
+                >❌</span
+              >
+            </a>
+            <button
+              type="button"
+              data-mobile-nav-toggle=""
+              class="header__hamburger bg-colorCream grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition-colors duration-300 ease-curve md:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
+              id="header__hamburger"
+              aria-label="Mobile navigation toggle"
+            >
+              <div class="header__hamburger-parts">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- TODO: FOOTER LINK SECTION -->
-    <div>
+    <div id="footer-menu" class="opacity-0">
       <div
-        class="bottom-section flex align-center justify-between p-mobileMargin md:px-sideMargin z-[90] pointer-events-none"
+        class="bottom-section flex align-center justify-between p-mobileMargin md:px-sideMargin z-[90]"
       >
         <div
-          class="flex align-center justify-start md:px-sideMargin z-[90] gap-6"
+          class="flex align-center justify-start md:px-sideMargin z-[90] gap-6 header-desktop-nav"
         >
           <h2>2024 @ COPYRIGHT</h2>
           <h2>FACEBOOK</h2>
@@ -328,33 +325,28 @@
 
         <button
           type="button"
-          data-search-toggle=""
-          class="header__search-toggle bg-colorCream relative grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition duration-300 ease-curve focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
-          id="header__search-button"
-          aria-label="Search"
+          data-user-toggle=""
+          class="header__user-toggle bg-colorCream relative grow-0 shrink-0 w-10 h-10 text-xs leading-10 text-center flex items-center justify-center rounded-full cursor-pointer transition duration-300 ease-curve focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-colorFocusOulineColor"
+          id="header__user-button"
+          aria-label="user"
         >
           <span
-            class="header__search-button--closed absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
+            class="header__user-button--closed absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
           >
             <svg
+              style="width: 26px"
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
+              viewBox="0 0 101 101"
+              id="user"
             >
               <path
-                d="M17.4999 17.5L13.169 13.1692M13.169 13.1692C14.3412 11.9971 14.9997 10.4073 14.9997 8.74962C14.9997 7.09196 14.3412 5.50219 13.169 4.33004C11.9969 3.15789 10.4071 2.49939 8.74944 2.49939C7.09178 2.49939 5.502 3.15789 4.32986 4.33004C3.15771 5.50219 2.49921 7.09196 2.49921 8.74962C2.49921 10.4073 3.15771 11.9971 4.32986 13.1692C5.502 14.3414 7.09178 14.9999 8.74944 14.9999C10.4071 14.9999 11.9969 14.3414 13.169 13.1692Z"
-                stroke="currentColor"
-                stroke-width="1.25"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                d="M50.4 54.5c10.1 0 18.2-8.2 18.2-18.2S60.5 18 50.4 18s-18.2 8.2-18.2 18.2 8.1 18.3 18.2 18.3zm0-31.7c7.4 0 13.4 6 13.4 13.4s-6 13.4-13.4 13.4S37 43.7 37 36.3s6-13.5 13.4-13.5zM18.8 83h63.4c1.3 0 2.4-1.1 2.4-2.4 0-12.6-10.3-22.9-22.9-22.9H39.3c-12.6 0-22.9 10.3-22.9 22.9 0 1.3 1.1 2.4 2.4 2.4zm20.5-20.5h22.4c9.2 0 16.7 6.8 17.9 15.7H21.4c1.2-8.9 8.7-15.7 17.9-15.7z"
               ></path>
             </svg>
           </span>
           <span
             aria-label="Close"
-            class="header__search-button--active absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
+            class="header__user-button--active absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity ease-curve duration-300"
             >❌</span
           >
         </button>
@@ -797,16 +789,40 @@
       </div>
     </predictive-search>
 
+    <!-- TODO: USER DRAWER -->
+    <user-drawer
+      class="fixed inset-0 w-full bg-colorCream overflow-y-scroll z-50 opacity-0 invisible -translate-y-20 md:translate-y-0 md:translate-x-4 transition-drawers ease-curve duration-500 md:w-[442px] md:top-smallMargin md:right-[104px] md:left-[unset] max-h-full md:h-userHeight rounded-b-2xl md:rounded-2xl pt-[164px] md:pt-smallMargin px-mobileMargin md:px-smallMargin flex flex-col bottom-[unset] shadow-modals no-items"
+    >
+      <div id="user" class="flex flex-col grow"></div>
+    </user-drawer>
+
     <!-- TODO: MAIN SECTION -->
     <main>
+      <!-- TODO: BACKGROUND TEXT DISPLAY-->
       <section>
+        <div class="scroll-view">
+          <div class="scroll-wrapper">
+            <div id="target" class="scroll-container">
+              <div class="global-wrapper animate-header-text">
+                <header class="hero">
+                  <div class="hero__heading">
+                    <h1 class="heading-big-hero mob">FACE<br /></h1>
+                  </div>
+                </header>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scroller-section" class="opacity-0">
         <div
-          class="section flex flex-col justify-center py-10 lg:py-25"
+          class="section flex flex-col justify-center"
           data-section-theme="#000"
         >
           <featured-products-slider-component class="relative">
             <ul
-              class="flex list-none overflow-x-auto snap-x snap-mandatory scroll-smooth gap-x-2 px-4 lg:px-sideMargin scroll-px-4 lg:scroll-px-sideMargin scrollbar-hide"
+              class="flex list-none overflow-x-auto snap-x snap-mandatory scroll-smooth gap-x-4 px-4 lg:px-sideMargin scroll-px-4 lg:scroll-px-sideMargin scrollbar-hide"
               role="list"
             >
               <li
@@ -930,47 +946,250 @@
                   </div>
                 </div>
               </li>
+              <li
+                class="relative flex shrink-0 flex-col overflow-hidden w-[92%] sm:w-[75%] md:w-[40%] xl:w-[25%] snap-start"
+                role="listitem"
+              >
+                <div class="group relative grow flex flex-col">
+                  <card-product-media class="lg:relative z-[1]">
+                    <a class="relative z-[1] w-full" href="/">
+                      <div
+                        class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
+                      >
+                        <div class="flex justify-center items-center w-full">
+                          <img
+                            src="//kitskinkind.com.au/cdn/shop/files/Skinkind_Faceoil_Front_front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478513&amp;width=838"
+                            alt="Skinkind Face Oil"
+                            width="838"
+                            height="1100"
+                            loading="lazy"
+                            sizes="(min-width: 1280px) calc((100vw - 112px - 8px) * 0.30),
+          (min-width: 800px) calc((100vw - 32px - 8px) * 0.40),
+          (min-width: 640px) calc((100vw - 32px) * 0.75),
+          calc((100vw - 32px) * 0.92)"
+                            class="object-contain w-full h-full"
+                          />
+                        </div>
+                        <div
+                          class="p-4 absolute bg-colorCream w-full h-full opacity-0 group-hover:opacity-100 top-0 left-0 transition duration-500 ease-curve max-md:hidden"
+                        >
+                          <video
+                            playsinline="playsinline"
+                            loop="loop"
+                            autoplay=""
+                            muted="muted"
+                            class="h-full w-full object-cover object-left rounded-xl lg:rounded-2xl overflow-hidden"
+                            data-lazyvids="loaded"
+                            preload="metadata"
+                            aria-label="Skinkind Face Oil"
+                            poster="//kitskinkind.com.au/cdn/shop/products/be42e915c5c04abbb99c17cc8c9514de.thumbnail.0000000_small.jpg?v=1657537513"
+                          >
+                            <source
+                              src="https://cdn.shopify.com/videos/c/vp/be42e915c5c04abbb99c17cc8c9514de/be42e915c5c04abbb99c17cc8c9514de.HD-1080p-7.2Mbps.mp4"
+                              type="video/mp4"
+                            />
+                            <img
+                              src="//kitskinkind.com.au/cdn/shop/products/be42e915c5c04abbb99c17cc8c9514de.thumbnail.0000000_small.jpg?v=1657537513"
+                            />
+                          </video>
+                        </div>
+                      </div>
+                    </a>
+
+                    <div
+                      data-info-panel=""
+                      class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
+                    >
+                      <div>
+                        <p>Suited for:</p>
+                        <p>All skin types.</p>
+                      </div>
+
+                      <div>
+                        <p>Application:</p>
+                        <p>2-5 drops daily, AM + PM.</p>
+                      </div>
+
+                      <div>
+                        <p>Benefits:</p>
+                        <p>Rebalance stressed skin.</p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      data-info-toggle=""
+                      aria-expanded="false"
+                      aria-controls="info-panel-7278142161085"
+                      class="card-product__info-toggle absolute z-[3] top-2 right-2 sm:top-6 sm:right-6 w-5 h-5 rounded-full bg-transparent text-colorRed border border-colorRed text-xs hover:bg-colorRed hover:text-colorWhite hover:border-colorRed"
+                    >
+                      i
+                    </button>
+
+                    <product-form
+                      class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
+                      ><form>
+                        <input type="hidden" name="" value="product" /><input
+                          type="hidden"
+                          value="✓"
+                        /><input
+                          type="hidden"
+                          name="id"
+                          value="42071703191741"
+                        />
+                        <button
+                          type="submit"
+                          name="add"
+                          class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
+                        >
+                          Add to Cart</button
+                        ><input type="hidden" value="7278142161085" /><input
+                          type="hidden"
+                        /></form></product-form
+                  ></card-product-media>
+                  <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
+                    <span
+                      class="absolute z-0 top-0 w-full left-0 h-full bg-colorCream group-hover:translate-y-0 rounded-b-xl lg:-translate-y-full transition duration-500 ease-in-out"
+                    ></span>
+                    <a
+                      class="flex flex-col justify-center text-center gap-1 grow"
+                      href="/"
+                    >
+                      <div class="relative text-xs uppercase">
+                        Skinkind Face Oil
+                      </div>
+                      <span class="relative text-colorGrey text-xs uppercase"
+                        >30ML / 1.01 FL. OZ</span
+                      >
+                      <div class="relative mt-auto pt-3 text-xs uppercase">
+                        <div class="price">$42</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="relative flex shrink-0 flex-col overflow-hidden w-[92%] sm:w-[75%] md:w-[40%] xl:w-[25%] snap-start"
+                role="listitem"
+              >
+                <div class="group relative grow flex flex-col">
+                  <card-product-media class="lg:relative z-[1]">
+                    <a class="relative z-[1] w-full" href="/">
+                      <div
+                        class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
+                      >
+                        <div class="flex justify-center items-center w-full">
+                          <img
+                            src="//kitskinkind.com.au/cdn/shop/files/Skinkind_Faceoil_Front_front_SHOP.jpg?crop=center&amp;format=webp&amp;height=1100&amp;v=1656478513&amp;width=838"
+                            alt="Skinkind Face Oil"
+                            width="838"
+                            height="1100"
+                            loading="lazy"
+                            sizes="(min-width: 1280px) calc((100vw - 112px - 8px) * 0.30),
+        (min-width: 800px) calc((100vw - 32px - 8px) * 0.40),
+        (min-width: 640px) calc((100vw - 32px) * 0.75),
+        calc((100vw - 32px) * 0.92)"
+                            class="object-contain w-full h-full"
+                          />
+                        </div>
+                        <div
+                          class="p-4 absolute bg-colorCream w-full h-full opacity-0 group-hover:opacity-100 top-0 left-0 transition duration-500 ease-curve max-md:hidden"
+                        >
+                          <video
+                            playsinline="playsinline"
+                            loop="loop"
+                            autoplay=""
+                            muted="muted"
+                            class="h-full w-full object-cover object-left rounded-xl lg:rounded-2xl overflow-hidden"
+                            data-lazyvids="loaded"
+                            preload="metadata"
+                            aria-label="Skinkind Face Oil"
+                            poster="//kitskinkind.com.au/cdn/shop/products/be42e915c5c04abbb99c17cc8c9514de.thumbnail.0000000_small.jpg?v=1657537513"
+                          >
+                            <source
+                              src="https://cdn.shopify.com/videos/c/vp/be42e915c5c04abbb99c17cc8c9514de/be42e915c5c04abbb99c17cc8c9514de.HD-1080p-7.2Mbps.mp4"
+                              type="video/mp4"
+                            />
+                            <img
+                              src="//kitskinkind.com.au/cdn/shop/products/be42e915c5c04abbb99c17cc8c9514de.thumbnail.0000000_small.jpg?v=1657537513"
+                            />
+                          </video>
+                        </div>
+                      </div>
+                    </a>
+
+                    <div
+                      data-info-panel=""
+                      class="card-product__info-panel p-4 absolute z-[2] bg-colorRed text-colorWhite top-0 left-0 bottom-0 right-0 sm:top-4 sm:left-4 sm:bottom-4 sm:right-4 transition duration-500 ease-curve rounded-xl flex flex-col justify-center opacity-0 invisible text-xs"
+                    >
+                      <div>
+                        <p>Suited for:</p>
+                        <p>All skin types.</p>
+                      </div>
+
+                      <div>
+                        <p>Application:</p>
+                        <p>2-5 drops daily, AM + PM.</p>
+                      </div>
+
+                      <div>
+                        <p>Benefits:</p>
+                        <p>Rebalance stressed skin.</p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      data-info-toggle=""
+                      aria-expanded="false"
+                      aria-controls="info-panel-7278142161085"
+                      class="card-product__info-toggle absolute z-[3] top-2 right-2 sm:top-6 sm:right-6 w-5 h-5 rounded-full bg-transparent text-colorRed border border-colorRed text-xs hover:bg-colorRed hover:text-colorWhite hover:border-colorRed"
+                    >
+                      i
+                    </button>
+
+                    <product-form
+                      class="absolute lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 bottom-0 w-full p-4 lg:p-8 z-[1] transition ease-curve duration-700"
+                      ><form>
+                        <input type="hidden" name="" value="product" /><input
+                          type="hidden"
+                          value="✓"
+                        /><input
+                          type="hidden"
+                          name="id"
+                          value="42071703191741"
+                        />
+                        <button
+                          type="submit"
+                          name="add"
+                          class="button button--full-width !text-sm !border !border-solid !border-colorRed bg-transparent text-colorRed lg:text-colorWhite lg:!bg-colorRed hover:lg:!bg-transparent hover:lg:!text-colorRed !px-3"
+                        >
+                          Add to Cart</button
+                        ><input type="hidden" value="7278142161085" /><input
+                          type="hidden"
+                        /></form></product-form
+                  ></card-product-media>
+                  <div class="relative z-0 p-6 pb-20 lg:p-6 grow flex flex-col">
+                    <span
+                      class="absolute z-0 top-0 w-full left-0 h-full bg-colorCream group-hover:translate-y-0 rounded-b-xl lg:-translate-y-full transition duration-500 ease-in-out"
+                    ></span>
+                    <a
+                      class="flex flex-col justify-center text-center gap-1 grow"
+                      href="/"
+                    >
+                      <div class="relative text-xs uppercase">
+                        Skinkind Face Oil
+                      </div>
+                      <span class="relative text-colorGrey text-xs uppercase"
+                        >30ML / 1.01 FL. OZ</span
+                      >
+                      <div class="relative mt-auto pt-3 text-xs uppercase">
+                        <div class="price">$42</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
             </ul>
           </featured-products-slider-component>
-        </div>
-      </section>
-      <section data-section-theme="#fff" style="display: none">
-        <div
-          class="swiper-container hero-swiper-container-main swiper-initialized swiper-horizontal swiper-backface-hidden"
-        >
-          <div
-            class="swiper-wrapper"
-            style="
-              transition-duration: 0ms;
-              transform: translate3d(-3840px, 0px, 0px);
-              transition-delay: 0ms;
-            "
-          >
-            <div
-              class="swiper-slide swiper-slide-next"
-              style="width: 1920px"
-              data-swiper-slide-index="1"
-            ></div>
-            <div
-              class="swiper-slide swiper-slide-prev"
-              style="width: 1920px"
-              data-swiper-slide-index="2"
-            ></div>
-            <div
-              class="swiper-slide swiper-slide-active"
-              data-swiper-slide-index="0"
-              style="width: 1920px"
-            >
-              <img
-                src="https://kitskinkind.com.au/cdn/shop/files/220502_KIT_04_0461_R2.jpg?format=webp&amp;v=1709857203&amp;width=2002"
-                width="2002"
-                height="3000"
-                loading="lazy"
-                sizes="100vw"
-                class="hidden md:block"
-              />
-            </div>
-          </div>
         </div>
       </section>
     </main>
@@ -981,6 +1200,8 @@
     <script src="/js/search-component.js" defer="defer"></script>
 
     <script src="/js/stickey-header.js" type="module"></script>
+
+    <script src="/js/user-drawer.js"></script>
 
     <script src="./js/cart-drawer.js"></script>
 
@@ -993,6 +1214,6 @@
 
     <script src="https://unpkg.com/gsap@3.10.4/dist/MotionPathPlugin.min.js"></script>
 
-    <script src="/js/pre-loader.js"></script>
+    <script src="/js/loader.js"></script>
   </body>
 </html>
