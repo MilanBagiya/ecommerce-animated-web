@@ -88,6 +88,7 @@
 
 body {
   font-weight: 400;
+  overflow: hidden;
 }
 
 p {
@@ -191,7 +192,7 @@ img {
 }
 
 .preloader-line {
-  background-color: #fff;
+  background-color: #000000;
   width: 0%;
   height: 8px;
   transition: height 0.3s, width 2.5s;
@@ -240,10 +241,11 @@ img {
   display: none;
 }
 
-.justify-center {
+.justify-self-center {
   justify-self: center;
 }
-.justify-end {
+
+.justify-self-end {
   justify-self: end;
 }
 
@@ -256,4 +258,9 @@ img {
   font-weight: 200;
   font-style: normal;
   font-display: swap;
+}
+
+.global-wrapper-menu.animate-header-menu {
+  transition: opacity 0.4s ease-out, transform 1.2s;
+  transform: translateY(96vh);
 }

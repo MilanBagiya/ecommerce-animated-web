@@ -66,6 +66,8 @@ body {
   justify-content: center;
   background-color: var(--announcement-bar-bgcolour);
   color: var(--announcement-bar-colour);
+
+  /* opacity: 0; */
 }
 
 .announcement-bar .marquee {

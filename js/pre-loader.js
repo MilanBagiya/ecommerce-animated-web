@@ -6,13 +6,12 @@ let progress_bar = document.querySelector(".preloader-line"),
   bt_bar_3 = document.querySelector(".bt_bar_3"),
   bt_bar_4 = document.querySelector(".bt_bar_4"),
   header_text = document.querySelector(".animate-header-text"),
-  bt_openmenu = document.querySelector(".menu-new__bt-burger");
+  bt_openmenu = document.querySelector(".menu-new__bt-burger"),
+  menuSectionLoad = document.querySelector(".animate-header-menu");
 
 let lottie_sensivity = 14e3,
   lottie_sensivity2 = 2860,
   scroll_loop_once = !0,
-  a = "https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/",
-  b = "_redis_team-",
   progress_path2,
   imageWidthCurrent = 250,
   imageHeightCurrent = 3460 / 14.4;
@@ -25,8 +24,15 @@ window.onload = () => {
   lottie_load(),
     tlCounter.to(counter, {
       value: 0,
-      duration: 4,
+      duration: 2,
       ease: Power1.easeOut,
+      onComplete: function () {
+        tlCounter.to(".announcement-bar", {
+          opacity: 1,
+          duration: 1,
+          ease: Power1.easeOut,
+        });
+      },
     });
 };
 
@@ -42,6 +48,7 @@ function lottie_load() {
   progress_bar.style.width = "100%";
   progress_bar.style.height = "0px";
   header_text.style.transform = "translate(0vh)";
+  menuSectionLoad.style.transform = "translate(0vh)";
   window.screen.width > 479
     ? (logo_bar.style.transform = "translate(0vh) scale(1)")
     : (logo_bar_mob.style.transform = "translate(0vh) scale(1)"),
