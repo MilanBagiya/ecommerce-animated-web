@@ -68,7 +68,8 @@ class PredictiveSearch extends SearchForm {
       }),
       this.searchToggle.addEventListener("click", this.toggleSearch.bind(this)),
       document.addEventListener("toggleMobileNav", () => this.close(!0, !1)),
-      document.addEventListener("toggleCart", () => this.close(!0, !1));
+      document.addEventListener("toggleCart", () => this.close(!0, !1)),
+      document.addEventListener("toggleUser", () => this.close(!1));
   }
   getQuery() {
     return this.input.value.trim();

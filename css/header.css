@@ -8,6 +8,7 @@
 
 .is-firefox .cart-open .header-section,
 .is-firefox .search-open .header-section,
+.is-firefox .user-open .header-section,
 .is-firefox .menu-active .header-section {
   position: fixed;
 }
@@ -182,28 +183,33 @@
 }
 
 .header__search-button--closed,
-.header__cart-button--closed {
+.header__cart-button--closed,
+.header__user-button--closed {
   opacity: 1;
 }
 
 .header__search-button--active,
-.header__cart-button--active {
+.header__cart-button--active,
+.header__user-button--active {
   font-size: 17px;
   opacity: 0;
 }
 
 .search-open .header__search-toggle,
-.cart-open .header__cart-button {
+.cart-open .header__cart-button,
+.user-open .header__user-toggle {
   background-color: var(--red);
   color: var(--white);
 }
 
 .search-open .header__search-button--closed,
+.user-open .header__user-button--closed,
 .cart-open .header__cart-button--closed {
   opacity: 0;
 }
 
 .search-open .header__search-button--active,
+.user-open .header__user-button--active,
 .cart-open .header__cart-button--active {
   opacity: 1;
 }

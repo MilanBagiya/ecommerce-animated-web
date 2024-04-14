@@ -892,6 +892,12 @@ video {
   -moz-column-gap: 0.5rem;
   column-gap: 0.5rem;
 }
+
+.gap-x-4 {
+  -moz-column-gap: 5.5rem;
+  column-gap: 5.5rem;
+}
+
 .gap-y-2 {
   row-gap: 0.5rem;
 }
@@ -1738,6 +1744,9 @@ video {
   }
   .md\:h-cartHeight {
     height: calc(100svh - 64px);
+  }
+  .md\:h-userHeight {
+    height: calc(50svh - 64px);
   }
   .md\:w-12 {
     width: 3rem;

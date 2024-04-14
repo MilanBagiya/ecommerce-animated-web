@@ -54,6 +54,7 @@
 
 body {
   background-color: var(--background-color);
+  color: #000;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
