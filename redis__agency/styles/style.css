@@ -1775,7 +1775,7 @@ textarea.w-select {
   --grey: #818181;
   --text-gray: #cfcfcf;
   --white-smoke: #ebebeb;
-  --red: #c70202;
+  /* --red: #c70202; */
 }
 .w-checkbox {
   margin-bottom: 5px;
@@ -4926,7 +4926,7 @@ img {
   color: var(--bg);
 }
 .blog-field.error {
-  border-color: var(--red);
+  border-color: var(--green);
 }
 .submit-blog {
   background-color: var(--bg);
@@ -5498,7 +5498,7 @@ img {
 }
 .text-error {
   background-color: var(--white-smoke);
-  color: var(--red);
+  color: var(--green);
   font-size: 1.2em;
   position: absolute;
   top: 1.4vw;
@@ -6379,7 +6379,7 @@ img {
   color: var(--dim-grey);
 }
 .textarea.error {
-  border-color: var(--red);
+  border-color: var(--green);
 }
 .submit-button {
   border: 1px solid var(--white);
@@ -7577,7 +7577,7 @@ img {
   border-color: var(--white);
 }
 .select-field.error {
-  border-color: var(--red);
+  border-color: var(--green);
 }
 .privacy-policy_s2 {
   justify-content: center;
@@ -7805,7 +7805,7 @@ img {
   padding-left: 0;
 }
 .text-block-2 {
-  color: var(--red);
+  color: var(--green);
 }
 .burger-line {
   background-color: #fff;
@@ -8454,7 +8454,7 @@ img {
   color: var(--dim-grey);
 }
 .redis-form__label.red {
-  color: var(--red);
+  color: var(--green);
 }
 .redis-form__text-field {
   color: var(--bg);
@@ -8485,10 +8485,10 @@ img {
   line-height: 120%;
 }
 .redis-form__text-field.error {
-  border-color: var(--red);
+  border-color: var(--green);
 }
 .redis-form__text-field.error::placeholder {
-  color: var(--red);
+  color: var(--green);
 }
 .redis-form__q {
   flex-direction: column;
@@ -8768,7 +8768,7 @@ img {
   color: var(--dim-grey);
 }
 .redis-form__cb-text.red {
-  color: var(--red);
+  color: var(--green);
 }
 .redis-form__cb-text._90 {
   line-height: 90%;

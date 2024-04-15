@@ -998,7 +998,7 @@ video {
   border-style: dashed;
 }
 .\!border-colorRed {
-  border-color: var(--red) !important;
+  border-color: var(--green) !important;
 }
 .border-colorBlack {
   border-color: var(--black);
@@ -1007,7 +1007,7 @@ video {
   border-color: var(--cream);
 }
 .border-colorRed {
-  border-color: var(--red);
+  border-color: var(--green);
 }
 .border-colorWhite {
   border-color: var(--white);
@@ -1025,7 +1025,7 @@ video {
   background-color: var(--off-white);
 }
 .bg-colorRed {
-  background-color: var(--red);
+  background-color: var(--green);
 }
 .bg-colorWhite {
   background-color: var(--white);
@@ -1297,7 +1297,7 @@ video {
   color: var(--main-nav);
 }
 .text-colorRed {
-  color: var(--red);
+  color: var(--green);
 }
 .text-colorWhite {
   color: var(--white);
@@ -1487,7 +1487,7 @@ video {
 .rte blockquote {
   border-left-width: 4px;
   border-style: solid;
-  border-color: var(--red);
+  border-color: var(--green);
   padding-left: 1rem;
 }
 .card-product__info-panel.active {
@@ -1516,7 +1516,7 @@ video {
 }
 .card-product__info-toggle.active:hover {
   background-color: var(--white);
-  color: var(--red);
+  color: var(--green);
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -1544,16 +1544,16 @@ video {
     scaleX(var(--scale-x)) scaleY(var(--scale-y));
 }
 .hover\:border-colorRed:hover {
-  border-color: var(--red);
+  border-color: var(--green);
 }
 .hover\:bg-colorRed:hover {
-  background-color: var(--red);
+  background-color: var(--green);
 }
 .hover\:text-colorBlack:hover {
   color: var(--black);
 }
 .hover\:text-colorRed:hover {
-  color: var(--red);
+  color: var(--green);
 }
 .hover\:text-colorWhite:hover {
   color: var(--white);
@@ -1637,7 +1637,7 @@ video {
     scaleX(var(--scale-x)) scaleY(var(--scale-y));
 }
 .group:hover .group-hover\:text-colorRed {
-  color: var(--red);
+  color: var(--green);
 }
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
@@ -1971,7 +1971,7 @@ video {
     border-radius: 1rem;
   }
   .lg\:\!bg-colorRed {
-    background-color: var(--red) !important;
+    background-color: var(--green) !important;
   }
   .lg\:p-10 {
     padding: 2.5rem;
@@ -2037,7 +2037,7 @@ video {
     background-color: transparent !important;
   }
   .hover\:lg\:\!text-colorRed:hover {
-    color: var(--red) !important;
+    color: var(--green) !important;
   }
   .group:hover .group-hover\:lg\:rounded-b-none {
     border-bottom-right-radius: 0;

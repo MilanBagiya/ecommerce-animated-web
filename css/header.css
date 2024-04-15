@@ -102,7 +102,7 @@
 }
 
 [data-nav-level-1].is-red {
-  color: var(--red);
+  color: var(--green);
 }
 
 .header__dropdown-backdrop {
@@ -198,7 +198,7 @@
 .search-open .header__search-toggle,
 .cart-open .header__cart-button,
 .user-open .header__user-toggle {
-  background-color: var(--red);
+  background-color: var(--green);
   color: var(--white);
 }
 
@@ -235,7 +235,7 @@
   transform: translate(var(--translate-x), var(--translate-y))
     rotate(var(--rotate)) skew(var(--skew-x)) skewY(var(--skew-y))
     scaleX(var(--scale-x)) scaleY(var(--scale-y));
-  color: var(--red);
+  color: var(--green);
 }
 
 .header__cart-button--ping .cart-items-indicator {
@@ -261,7 +261,7 @@
 }
 
 .menu-active .header__hamburger {
-  background-color: var(--red);
+  background-color: var(--green);
 }
 
 .menu-active .header__hamburger span {

@@ -1,6 +1,6 @@
 :root {
   --red: #c20019;
-  --green: #c20019;
+  --green: #5daa21;
 
   --black: #000;
   --grey: #aaa;
@@ -12,7 +12,7 @@
   --main-nav: #000;
   --color-focus-outline: 194, 0, 25;
   --product-info-box-bg: #fff;
-  --logo-color: #c20019;
+  --logo-color: #5daa21;
   --background-color: #faf3e8;
   --top-margin: 32px;
   --side-margin: 32px;
@@ -30,23 +30,23 @@
 }
 
 ::-moz-placeholder {
-  color: var(--red);
+  color: var(--green);
   opacity: 1;
 }
 
 ::placeholder {
-  color: var(--red);
+  color: var(--green);
   opacity: 1;
 }
 
 ::-moz-selection {
   color: var(--cream);
-  background: var(--red);
+  background: var(--green);
 }
 
 ::selection {
   color: var(--cream);
-  background: var(--red);
+  background: var(--green);
 }
 
 *,
@@ -131,7 +131,7 @@ button {
   padding: 0.75rem 1.25rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
-  color: var(--red);
+  color: var(--green);
   --shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-colored: 0 1px 2px 0 var(--shadow-color);
   box-shadow: var(--ring-offset-shadow, 0 0 #0000),
@@ -143,15 +143,15 @@ button {
   box-shadow: var(--ring-offset-shadow), var(--ring-shadow),
     var(--shadow, 0 0 #0000);
   --ring-inset: inset;
-  --ring-color: var(--red);
+  --ring-color: var(--green);
 }
 
 .field__input::-moz-placeholder {
-  color: var(--red);
+  color: var(--green);
 }
 
 .field__input::placeholder {
-  color: var(--red);
+  color: var(--green);
 }
 
 .field__input:focus {
@@ -162,7 +162,7 @@ button {
   box-shadow: var(--ring-offset-shadow), var(--ring-shadow),
     var(--shadow, 0 0 #0000);
   --ring-inset: inset;
-  --ring-color: var(--red);
+  --ring-color: var(--green);
 }
 
 input[type="search"]::-ms-clear {
@@ -251,23 +251,23 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .button.button--black:hover,
 .btn:hover {
-  background-color: var(--red);
+  background-color: var(--green);
 }
 
 .button.button--black:disabled:hover {
   background-color: var(--black);
 }
 
-.button.button--red {
+.button.button--green {
   color: var(--white);
-  background-color: var(--red);
-  border: 1px solid var(--red);
+  background-color: var(--green);
+  border: 1px solid var(--green);
 }
 
-.button.button--red:hover {
+.button.button--green:hover {
   background-color: transparent;
-  border-color: var(--red);
-  color: var(--red);
+  border-color: var(--green);
+  color: var(--green);
 }
 
 .button.button--white {
@@ -300,14 +300,14 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: var(--cream);
 }
 
-.button.button--outline--red {
-  color: var(--red);
-  border: 1px solid var(--red);
+.button.button--outline--green {
+  color: var(--green);
+  border: 1px solid var(--green);
 }
 
-.button.button--outline--red:hover {
+.button.button--outline--green:hover {
   color: var(--white);
-  background-color: var(--red);
+  background-color: var(--green);
 }
 
 .template__page-ethos {
@@ -334,7 +334,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .template__page-index main {
   color: var(--cream);
-  background-color: var(--red);
+  background-color: var(--green);
   padding: 210px var(--medium-margin);
 }
 
@@ -387,7 +387,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .shopify-policy__body a:hover {
-  color: var(--red);
+  color: var(--green);
 }
 
 .shopify-policy__body th {
