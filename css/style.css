@@ -84,7 +84,7 @@ body {
   justify-content: space-around;
   min-width: 100%;
   gap: var(--gap);
-  animation: scroll 30s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .announcement-bar .marquee__content .embla__slide {

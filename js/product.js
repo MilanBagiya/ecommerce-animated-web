@@ -89,7 +89,7 @@ function createUISections() {
   products.forEach((product, index) => {
     const li = document.createElement("li");
     li.className =
-      "relative flex shrink-0 flex-col overflow-hidden w-[92%] sm:w-[75%] md:w-[40%] xl:w-[15%] snap-start";
+      "relative flex shrink-0 flex-col overflow-hidden w-[92%] sm:w-[75%] md:w-[40%] xl:w-[15%] snap-start item";
     li.role = "listitem";
 
     li.style.zIndex = index % 2 === 0 ? 12 : 10;
