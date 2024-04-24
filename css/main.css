@@ -2069,6 +2069,9 @@ video {
   .xl\:w-\[20\%\] {
     width: 20%;
   }
+  .xl\:w-\[15\%\] {
+    width: 18%;
+  }
   .xl\:px-sideMargin {
     padding-left: var(--side-margin);
     padding-right: var(--side-margin);

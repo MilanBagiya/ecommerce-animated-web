@@ -15,8 +15,7 @@ class o extends HTMLElement {
       (this.mobileNavIsActive = !1);
   }
   connectedCallback() {
-    window.addEventListener("scroll", this.updateOnScroll.bind(this)),
-      this.watchHeaderLevel1Links(),
+    this.watchHeaderLevel1Links(),
       this.handleDropdownMenus(),
       this.mobileNavToggle.addEventListener(
         "click",
@@ -46,11 +45,6 @@ class o extends HTMLElement {
   }
   handleResize() {
     this.resetNav(), this.resetMobileNav();
-  }
-  updateOnScroll() {
-    window.scrollY > 100
-      ? this.header.classList.add("is-scrolled")
-      : this.header.classList.remove("is-scrolled");
   }
   updateNavBackground(e) {
     let i = e.target.closest("[data-nav-level-1]");

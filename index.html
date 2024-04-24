@@ -73,8 +73,8 @@
       </div>
     </div>
 
-    <sticky-headers>
-      <!-- TODO: LOADER SECTION -->
+    <!-- TODO: LOADER SECTION -->
+    <sticky-header>
       <header>
         <nav
           class="nav test absolute top-0 right-0 left-0 p-mobileMargin md:px-sideMargin z-[90]"
@@ -84,7 +84,7 @@
               <ul class="header__desktop-nav p-0 m-0 rounded-full list-none">
                 <div
                   class="header__nav-background absolute inset-0 w-full h-13 bg-colorCream rounded-full opacity-0 transition duration-300 ease-curve z-[1] group-hover:opacity-100"
-                  style="transform: translateX(0px)"
+                  style="width: 92px; transform: translateX(0px)"
                 ></div>
 
                 <li class="inline-block relative z-[2]">
@@ -92,34 +92,326 @@
                     data-nav-level-1=""
                     data-menu-toggle="shop"
                     class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
-                    >PRODUCT</a
+                    >Shop</a
                   >
                 </li>
 
                 <li class="inline-block relative z-[2]">
                   <a
-                    href=""
                     data-nav-level-1=""
                     class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
-                    >ABOUT</a
+                    >Ethos</a
                   >
                 </li>
 
                 <li class="inline-block relative z-[2]">
                   <a
-                    href=""
                     data-nav-level-1=""
                     class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
-                    >OTHER</a
+                    >Apothecary</a
+                  >
+                </li>
+
+                <li class="inline-block relative z-[2]">
+                  <a
+                    data-nav-level-1=""
+                    class="px-6 py-4 inline-block w-full h-full pointer-events-auto uppercase text-colorMainNav hover:text-colorRed transition-colors duration-300 ease-curve rounded-full"
+                    >Journal</a
                   >
                 </li>
               </ul>
             </div>
           </div>
 
+          <div
+            class="header__dropdown absolute top-full w-full left-0 right-0 px-smallMargin xl:px-sideMargin hidden md:flex justify-center invisible opacity-0 -translate-y-10 ease-curve duration-500 pointer-events-none"
+            data-dropdown-menu="shop"
+            aria-expanded="false"
+          >
+            <div
+              class="bg-colorCream rounded-3xl py-smallMargin max-w-full flex pointer-events-auto shadow-modals"
+            >
+              <div
+                class="w-full min-w-[180px] max-w-[220px] shrink-1 grow-1 pr-smallMargin border-r border-colorBlack pl-smallMargin"
+              >
+                <ul class="">
+                  <li class="group flex">
+                    <a
+                      class="uppercase text-md relative flex items-center py-2"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
+                      >
+                        <path
+                          d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <span
+                        class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
+                        >Best Sellers
+
+                        <span class="text-[0.5rem]">21</span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="group flex">
+                    <a
+                      class="uppercase text-md relative flex items-center py-2"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
+                      >
+                        <path
+                          d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <span
+                        class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
+                        >Latest
+
+                        <span class="text-[0.5rem]">01</span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="group flex">
+                    <a
+                      class="uppercase text-md relative flex items-center py-2"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
+                      >
+                        <path
+                          d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <span
+                        class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
+                        >All
+
+                        <span class="text-[0.5rem]">21</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <header-nav-slider class="relative grow shrink overflow-hidden">
+                <ul
+                  class="submenu__images flex list-none overflow-x-auto snap-x snap-mandatory scroll-smooth px-10 scroll-px-10 scrollbar-hide"
+                  role="list"
+                  id="Slider-header-1"
+                >
+                  <li
+                    id="Slide-header-1"
+                    class="relative flex items-center w-full flex-col mx-auto max-w-[188px] min-w-[180px] lg:min-w-[20%] snap-start px-5"
+                    role="listitem"
+                  >
+                    <a
+                      class="relative group flex shrink-0 flex-col items-center overflow-hidden gap-4"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="relative inset-0 aspect-square"
+                      >
+                        <img
+                          src="./assets/1.png"
+                          sizes="148px"
+                          alt=""
+                          loading="lazy"
+                          width="1904"
+                          height="2500"
+                          class="h-full w-full object-cover object-center aspect-square"
+                        />
+                      </span>
+                      <span
+                        class="relative text-center text-md uppercase flex items-start justify-center gap-1"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
+                        >
+                          <path
+                            d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                        <span
+                          class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
+                          >Face
+                          <span class="text-[0.5rem]">10</span>
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    id="Slide-header-1"
+                    class="relative flex items-center w-full flex-col mx-auto max-w-[188px] min-w-[180px] lg:min-w-[20%] snap-start px-5"
+                    role="listitem"
+                  >
+                    <a
+                      class="relative group flex shrink-0 flex-col items-center overflow-hidden gap-4"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="relative inset-0 aspect-square"
+                      >
+                        <img
+                          src="./assets/1.png"
+                          sizes="148px"
+                          alt=""
+                          loading="lazy"
+                          width="1904"
+                          height="2500"
+                          class="h-full w-full object-cover object-center aspect-square"
+                        />
+                      </span>
+                      <span
+                        class="relative text-center text-md uppercase flex items-start justify-center gap-1"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
+                        >
+                          <path
+                            d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                        <span
+                          class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
+                          >Face
+                          <span class="text-[0.5rem]">10</span>
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    id="Slide-header-1"
+                    class="relative flex items-center w-full flex-col mx-auto max-w-[188px] min-w-[180px] lg:min-w-[20%] snap-start px-5"
+                    role="listitem"
+                  >
+                    <a
+                      class="relative group flex shrink-0 flex-col items-center overflow-hidden gap-4"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="relative inset-0 aspect-square"
+                      >
+                        <img
+                          src="./assets/1.png"
+                          sizes="148px"
+                          alt=""
+                          loading="lazy"
+                          width="1904"
+                          height="2500"
+                          class="h-full w-full object-cover object-center aspect-square"
+                        />
+                      </span>
+                      <span
+                        class="relative text-center text-md uppercase flex items-start justify-center gap-1"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
+                        >
+                          <path
+                            d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                        <span
+                          class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
+                          >Face
+                          <span class="text-[0.5rem]">10</span>
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="overflow-visible">
+                  <button
+                    type="button"
+                    class="absolute top-1/2 -translate-y-1/2 rotate-90 left-3 bg-colorOffWhite w-[32px] h-[32px] rounded-full flex items-center lg:flex justify-center p-2.5 z-[1]"
+                    name="previous"
+                    aria-label="Slide left"
+                    style="display: none"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      class="icon icon-caret"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="absolute top-1/2 -translate-y-1/2 -rotate-90 right-3 bg-colorOffWhite w-[32px] h-[32px] rounded-full flex items-center lg:flex justify-center p-2.5 z-[1]"
+                    name="next"
+                    aria-label="Slide right"
+                    style="display: none"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      class="icon icon-caret"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </header-nav-slider>
+            </div>
+          </div>
+
           <div class="nav__menu home hide">
             <div>
-              <a href="#" class="p-normal none-decor bt-anchor-2">Contact</a>
+              <a class="p-normal none-decor bt-anchor-2">Contact</a>
             </div>
           </div>
 
@@ -150,7 +442,6 @@
                   <ul class="">
                     <li class="group flex">
                       <a
-                        href="/collections/best-sellers"
                         class="uppercase text-md relative flex items-center py-2"
                       >
                         <svg
@@ -177,7 +468,6 @@
 
                     <li class="group flex">
                       <a
-                        href="/collections/latest"
                         class="uppercase text-md relative flex items-center py-2"
                       >
                         <svg
@@ -204,7 +494,6 @@
 
                     <li class="group flex">
                       <a
-                        href="/collections/all"
                         class="uppercase text-md relative flex items-center py-2"
                       >
                         <svg
@@ -328,422 +617,7 @@
           </div>
         </nav>
       </header>
-
-      <!-- TODO: HEADER DROPDOWN -->
-      <div
-        class="header__dropdown header-align top-full w-full left-0 right-0 px-smallMargin xl:px-sideMargin hidden md:flex justify-center invisible opacity-0 translate-y-10 ease-curve duration-500 pointer-events-none is-shown"
-        data-dropdown-menu="shop"
-        aria-expanded="true"
-      >
-        <div
-          class="bg-colorCream rounded-3xl py-smallMargin max-w-full flex pointer-events-auto shadow-modals"
-        >
-          <div
-            class="w-full min-w-[180px] max-w-[220px] shrink-1 grow-1 pr-smallMargin border-r border-colorBlack pl-smallMargin"
-          >
-            <ul class="">
-              <li class="group flex">
-                <a
-                  href="/collections/best-sellers"
-                  class="uppercase text-md relative flex items-center py-2"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                  >
-                    <path
-                      d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                  <span
-                    class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                    >Best Sellers
-
-                    <span class="text-[0.5rem]">21</span>
-                  </span>
-                </a>
-              </li>
-
-              <li class="group flex">
-                <a
-                  href="/collections/latest"
-                  class="uppercase text-md relative flex items-center py-2"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                  >
-                    <path
-                      d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                  <span
-                    class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                    >Latest
-
-                    <span class="text-[0.5rem]">01</span>
-                  </span>
-                </a>
-              </li>
-
-              <li class="group flex">
-                <a
-                  href="/collections/all"
-                  class="uppercase text-md relative flex items-center py-2"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                  >
-                    <path
-                      d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                  <span
-                    class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                    >All
-
-                    <span class="text-[0.5rem]">21</span>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <header-nav-slider class="relative grow shrink overflow-hidden">
-            <ul
-              class="submenu__images flex list-none overflow-x-auto snap-x snap-mandatory scroll-smooth px-10 scroll-px-10 scrollbar-hide"
-              role="list"
-              id="Slider-header-1"
-            >
-              <li
-                id="Slide-header-1"
-                class="relative flex items-center w-full flex-col mx-auto max-w-[188px] min-w-[180px] lg:min-w-[20%] snap-start px-5"
-                role="listitem"
-              >
-                <a
-                  href="/collections/face"
-                  class="relative group flex shrink-0 flex-col items-center overflow-hidden gap-4"
-                >
-                  <span
-                    aria-hidden="true"
-                    class="relative inset-0 aspect-square"
-                  >
-                    <img
-                      srcset="
-                        //kitskinkind.com.au/cdn/shop/files/F_A.C.E_Serum_Group_02f400f5-d911-4013-85d7-3a638191e96d.jpg?format=webp&amp;v=1656379858&amp;width=165  165w,
-                        //kitskinkind.com.au/cdn/shop/files/F_A.C.E_Serum_Group_02f400f5-d911-4013-85d7-3a638191e96d.jpg?format=webp&amp;v=1656379858&amp;width=360  360w,
-                        //kitskinkind.com.au/cdn/shop/files/F_A.C.E_Serum_Group_02f400f5-d911-4013-85d7-3a638191e96d.jpg?v=1656379858                               1904w
-                      "
-                      src="//kitskinkind.com.au/cdn/shop/files/F_A.C.E_Serum_Group_02f400f5-d911-4013-85d7-3a638191e96d.jpg?format=webp&amp;v=1656379858&amp;width=533"
-                      sizes="148px"
-                      alt=""
-                      loading="lazy"
-                      width="1904"
-                      height="2500"
-                      class="h-full w-full object-cover object-center aspect-square"
-                    />
-                  </span>
-                  <span
-                    class="relative text-center text-md uppercase flex items-start justify-center gap-1"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                    >
-                      <path
-                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <span
-                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                      >Face
-                      <span class="text-[0.5rem]">10</span>
-                    </span>
-                  </span>
-                </a>
-              </li>
-
-              <li
-                id="Slide-header-2"
-                class="relative flex items-center w-full flex-col mx-auto max-w-[188px] min-w-[180px] lg:min-w-[20%] snap-start px-5"
-                role="listitem"
-              >
-                <a
-                  href="/collections/body"
-                  class="relative group flex shrink-0 flex-col items-center overflow-hidden gap-4"
-                >
-                  <span
-                    aria-hidden="true"
-                    class="relative inset-0 aspect-square"
-                  >
-                    <img
-                      srcset="
-                        //kitskinkind.com.au/cdn/shop/files/KIT_UNWIND_BODY_BALM_THUMB_HOVER.jpg?format=webp&amp;v=1695094865&amp;width=165 165w,
-                        //kitskinkind.com.au/cdn/shop/files/KIT_UNWIND_BODY_BALM_THUMB_HOVER.jpg?format=webp&amp;v=1695094865&amp;width=360 360w,
-                        //kitskinkind.com.au/cdn/shop/files/KIT_UNWIND_BODY_BALM_THUMB_HOVER.jpg?v=1695094865                               838w
-                      "
-                      src="//kitskinkind.com.au/cdn/shop/files/KIT_UNWIND_BODY_BALM_THUMB_HOVER.jpg?format=webp&amp;v=1695094865&amp;width=533"
-                      sizes="148px"
-                      alt=""
-                      loading="lazy"
-                      width="838"
-                      height="1100"
-                      class="h-full w-full object-cover object-center aspect-square"
-                    />
-                  </span>
-                  <span
-                    class="relative text-center text-md uppercase flex items-start justify-center gap-1"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                    >
-                      <path
-                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <span
-                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                      >Body
-                      <span class="text-[0.5rem]">09</span>
-                    </span>
-                  </span>
-                </a>
-              </li>
-
-              <li
-                id="Slide-header-3"
-                class="relative flex items-center w-full flex-col mx-auto max-w-[188px] min-w-[180px] lg:min-w-[20%] snap-start px-5"
-                role="listitem"
-              >
-                <a
-                  href=""
-                  class="relative group flex shrink-0 flex-col items-center overflow-hidden gap-4"
-                >
-                  <span
-                    aria-hidden="true"
-                    class="relative inset-0 aspect-square"
-                  >
-                    <img
-                      srcset="
-                        //kitskinkind.com.au/cdn/shop/files/Relax_Drops_Group_HOVER.jpg?format=webp&amp;v=1657537914&amp;width=165  165w,
-                        //kitskinkind.com.au/cdn/shop/files/Relax_Drops_Group_HOVER.jpg?format=webp&amp;v=1657537914&amp;width=360  360w,
-                        //kitskinkind.com.au/cdn/shop/files/Relax_Drops_Group_HOVER.jpg?v=1657537914                               1909w
-                      "
-                      src="//kitskinkind.com.au/cdn/shop/files/Relax_Drops_Group_HOVER.jpg?format=webp&amp;v=1657537914&amp;width=533"
-                      sizes="148px"
-                      alt=""
-                      loading="lazy"
-                      width="1909"
-                      height="2500"
-                      class="h-full w-full object-cover object-center aspect-square"
-                    />
-                  </span>
-                  <span
-                    class="relative text-center text-md uppercase flex items-start justify-center gap-1"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                    >
-                      <path
-                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <span
-                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                    >
-                    </span>
-                  </span>
-                </a>
-              </li>
-
-              <li
-                id="Slide-header-4"
-                class="relative flex items-center w-full flex-col mx-auto max-w-[188px] min-w-[180px] lg:min-w-[20%] snap-start px-5"
-                role="listitem"
-              >
-                <a
-                  href="/collections/holiday-kits-for-you"
-                  class="relative group flex shrink-0 flex-col items-center overflow-hidden gap-4"
-                >
-                  <span
-                    aria-hidden="true"
-                    class="relative inset-0 aspect-square"
-                  >
-                    <img
-                      srcset="
-                        //kitskinkind.com.au/cdn/shop/files/YOUR_ON_THE_GO_KIT_PRODUCT_FRONT_2.jpg?format=webp&amp;v=1698368120&amp;width=165  165w,
-                        //kitskinkind.com.au/cdn/shop/files/YOUR_ON_THE_GO_KIT_PRODUCT_FRONT_2.jpg?format=webp&amp;v=1698368120&amp;width=360  360w,
-                        //kitskinkind.com.au/cdn/shop/files/YOUR_ON_THE_GO_KIT_PRODUCT_FRONT_2.jpg?v=1698368120                               2000w
-                      "
-                      src="//kitskinkind.com.au/cdn/shop/files/YOUR_ON_THE_GO_KIT_PRODUCT_FRONT_2.jpg?format=webp&amp;v=1698368120&amp;width=533"
-                      sizes="148px"
-                      alt=""
-                      loading="lazy"
-                      width="2000"
-                      height="1757"
-                      class="h-full w-full object-cover object-center aspect-square"
-                    />
-                  </span>
-                  <span
-                    class="relative text-center text-md uppercase flex items-start justify-center gap-1"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                    >
-                      <path
-                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <span
-                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                      >Kits
-                      <span class="text-[0.5rem]">01</span>
-                    </span>
-                  </span>
-                </a>
-              </li>
-
-              <li
-                id="Slide-header-5"
-                class="relative flex items-center w-full flex-col mx-auto max-w-[188px] min-w-[180px] lg:min-w-[20%] snap-start px-5"
-                role="listitem"
-              >
-                <a
-                  href="/collections/tools"
-                  class="relative group flex shrink-0 flex-col items-center overflow-hidden gap-4"
-                >
-                  <span
-                    aria-hidden="true"
-                    class="relative inset-0 aspect-square"
-                  >
-                    <img
-                      srcset="
-                        //kitskinkind.com.au/cdn/shop/files/Gua_Sha_Group_HOVER.jpg?format=webp&amp;v=1656589492&amp;width=165  165w,
-                        //kitskinkind.com.au/cdn/shop/files/Gua_Sha_Group_HOVER.jpg?format=webp&amp;v=1656589492&amp;width=360  360w,
-                        //kitskinkind.com.au/cdn/shop/files/Gua_Sha_Group_HOVER.jpg?v=1656589492                               1909w
-                      "
-                      src="//kitskinkind.com.au/cdn/shop/files/Gua_Sha_Group_HOVER.jpg?format=webp&amp;v=1656589492&amp;width=533"
-                      sizes="148px"
-                      alt=""
-                      loading="lazy"
-                      width="1909"
-                      height="2500"
-                      class="h-full w-full object-cover object-center aspect-square"
-                    />
-                  </span>
-                  <span
-                    class="relative text-center text-md uppercase flex items-start justify-center gap-1"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="absolute left-0 text-colorRed opacity-0 group-hover:opacity-100 transition-opacity ease-curve duration-300"
-                    >
-                      <path
-                        d="M10.7483 7H13.0034L18 12L13.0034 17H10.7483L15.0374 12.7743H5V11.1814H14.9932L10.7483 7Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <span
-                      class="translate-x-0 group-hover:translate-x-8 transition-transform ease-curve duration-300"
-                      >Tools
-                      <span class="text-[0.5rem]">03</span>
-                    </span>
-                  </span>
-                </a>
-              </li>
-            </ul>
-            <div class="overflow-visible">
-              <button
-                type="button"
-                class="absolute top-1/2 -translate-y-1/2 rotate-90 left-3 bg-colorOffWhite w-[32px] h-[32px] rounded-full flex items-center lg:flex justify-center p-2.5 z-[1]"
-                name="previous"
-                aria-label="Slide left"
-                style="display: none"
-              >
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  class="icon icon-caret"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </button>
-
-              <button
-                type="button"
-                class="absolute top-1/2 -translate-y-1/2 -rotate-90 right-3 bg-colorOffWhite w-[32px] h-[32px] rounded-full flex items-center lg:flex justify-center p-2.5 z-[1]"
-                name="next"
-                aria-label="Slide right"
-                style="display: none"
-              >
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  class="icon icon-caret"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-          </header-nav-slider>
-        </div>
-      </div>
-    </sticky-headers>
+    </sticky-header>
 
     <!-- TODO: FOOTER LINK SECTION -->
     <div id="footer-menu" class="opacity-0">
@@ -835,7 +709,7 @@
                   <div
                     class="list-product__image w-[48px] h-[48px] shrink-0 grow-0 flex justify-center items-center mr-3"
                   >
-                    <a href="/" class="block w-full h-full">
+                    <a class="block w-full h-full">
                       <img
                         src="./assets/2a.png"
                         width="100"
@@ -847,7 +721,7 @@
                   </div>
                   <div class="list-product__meta grow text-xs uppercase">
                     <div class="list-product__title">
-                      <a href="/"> Smoothing Concentrate</a>
+                      <a> Smoothing Concentrate</a>
                     </div>
                     <div class="list-product__variant text-colorGrey">
                       30ML / 1.01 FL. OZ
@@ -881,7 +755,7 @@
                   <div
                     class="list-product__image w-[48px] h-[48px] shrink-0 grow-0 flex justify-center items-center mr-3"
                   >
-                    <a href="/" class="block w-full h-full">
+                    <a class="block w-full h-full">
                       <img
                         src="./assets/4.png"
                         width="100"
@@ -893,7 +767,7 @@
                   </div>
                   <div class="list-product__meta grow text-xs uppercase">
                     <div class="list-product__title">
-                      <a href="/"> Replacing Concentrate</a>
+                      <a> Replacing Concentrate</a>
                     </div>
                     <div class="list-product__variant text-colorGrey">
                       30ML / 1.01 FL. OZ
@@ -1141,9 +1015,7 @@
             id="predictive-search-no-search-products"
           >
             Best Sellers
-            <a href="/collections/best-sellers" class="hover:text-colorRed"
-              >View all</a
-            >
+            <a class="hover:text-colorRed">View all</a>
           </h5>
           <ul
             class="predictive-search-results-products-list"
@@ -1158,7 +1030,7 @@
             >
               <div class="group relative grow flex flex-col">
                 <card-product-media class="lg:relative z-[1]">
-                  <a class="relative z-[1] w-full" href="/">
+                  <a class="relative z-[1] w-full">
                     <div
                       class="relative bg-colorCream aspect-[3/4] flex overflow-hidden rounded-t-xl lg:rounded-2xl group-hover:lg:rounded-t-2xl group-hover:lg:rounded-b-none"
                     >
@@ -1204,7 +1076,6 @@
                   ></span>
                   <a
                     class="flex flex-col justify-center text-center gap-1 grow"
-                    href="/"
                   >
                     <div class="relative text-xs uppercase">
                       Mineral Water Cleanser
@@ -1271,13 +1142,13 @@
 
     <script src="/js/search-component.js" defer="defer"></script>
 
-    <script src="/js/stickey-header.js" type="module"></script>
-
     <script src="/js/user-drawer.js"></script>
 
     <script src="./js/cart-drawer.js"></script>
 
     <script src="./js/main.js" type="module"></script>
+
+    <script src="/js/stickey-header.js" type="module"></script>
 
     <!-- TODO: GSAP LIBRARY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
