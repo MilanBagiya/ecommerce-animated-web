@@ -62,3 +62,4 @@ function check_device() {
   document.location.reload();
 }
 progress_bar.style.width = "70%";
+

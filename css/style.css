@@ -142,3 +142,9 @@ body {
     transition-duration: 0.3s, 5s;
   }
 }
+
+.header-align {
+  position: absolute;
+  top: 145px;
+  z-index: 10000;
+}

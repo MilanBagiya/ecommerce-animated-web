@@ -12,14 +12,14 @@ class user extends HTMLElement {
     this.navBackdrop.addEventListener("click", () => {
       window.appState.userDrawer && this.close();
     }),
-      this.userToggle.addEventListener("click", this.toggleuser.bind(this)),
+      this.userToggle.addEventListener("click", this.toggleUser.bind(this)),
       document.addEventListener("toggleMobileNav", () => this.close(!1)),
       document.addEventListener("toggleSearch", () => this.close(!1)),
       document.addEventListener("toggleCart", () => this.close(!1)),
       window.location.hash === "#user" &&
         ((this.userDrawerIsOpen = !0), this.open());
   }
-  toggleuser(event) {
+  toggleUser(event) {
     event.preventDefault(), this.userDrawerIsOpen ? this.close() : this.open();
   }
   open(triggeredBy) {
